@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="ka"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>იმპორტი</title>
+<style>body{font:15px/1.5 system-ui,sans-serif;max-width:520px;margin:40px auto;padding:0 14px;color:#1f2937}input,select,button{font:inherit;padding:8px;width:100%;margin:5px 0}button{background:#2f4b6e;color:#fff;border:0;border-radius:6px;cursor:pointer}.red{color:#c0392b}.hidden{display:none}</style></head><body>
+<h3>კლიენტების ერთჯერადი იმპორტი</h3>
+<form id="lf"><input id="em" type="email" placeholder="ელფოსტა" required><input id="pw" type="password" placeholder="პაროლი" required><button>შესვლა</button></form>
+<div id="app" class="hidden"><p id="info"></p>
+<label>აირჩიე ფაილი clients.json</label><input id="file" type="file" accept=".json">
+<label>ყველა კლიენტის ხელშეკრულების ვალუტა</label><select id="cur"><option>USD</option><option>EUR</option><option>GEL</option></select>
+<button id="go">იმპორტის დაწყება</button></div><p id="msg"></p>
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getAuth,signInWithEmailAndPassword,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {getFirestore,collection,getDocs,doc,writeBatch} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+const app=initializeApp({apiKey:"AIzaSyBNa4B-0hf_a13g3wW2ohK2xGKnOPqLbrY",authDomain:"debitorebi-baza.firebaseapp.com",projectId:"debitorebi-baza",storageBucket:"debitorebi-baza.firebasestorage.app",messagingSenderId:"269292067281",appId:"1:269292067281:web:d2330c15d3328af967a8f0"});
+const auth=getAuth(app),db=getFirestore(app),$=s=>document.querySelector(s);let n=0;
+$('#lf').onsubmit=async e=>{e.preventDefault();try{await signInWithEmailAndPassword(auth,$('#em').value.trim(),$('#pw').value)}catch(x){$('#msg').innerHTML='<span class="red">არასწორი ელფოსტა ან პაროლი</span>'}};
+onAuthStateChanged(auth,async u=>{if(!u)return;$('#lf').classList.add('hidden');$('#app').classList.remove('hidden');
+ try{n=(await getDocs(collection(db,'clients'))).size}catch(x){$('#msg').textContent='ბაზასთან წვდომის შეცდომა: '+x.message}
+ $('#info').innerHTML=n?`<span class="red">ბაზაში უკვე ${n} კლიენტია. თუ ისევ ჩატვირთავ, დუბლიკატები გაჩნდება!</span>`:'ბაზა ცარიელია, შეგიძლია იმპორტი.'});
+$('#go').onclick=async()=>{const f=$('#file').files[0];if(!f){$('#msg').textContent='ჯერ აირჩიე ფაილი';return}
+ if(n&&!confirm('ბაზაში უკვე არის კლიენტები. ნამდვილად გავაგრძელო?'))return;
+ try{const arr=JSON.parse(await f.text());const b=writeBatch(db);
+  arr.forEach(c=>{c.cur=$('#cur').value;c.sched.forEach(x=>{if(x.pc!='GEL')x.pc=c.cur});b.set(doc(collection(db,'clients')),{...c,updatedBy:'იმპორტი ექსელიდან',updatedAt:Date.now()})});
+  await b.commit();$('#msg').textContent=`მზადაა: ჩაიტვირთა ${arr.length} კლიენტი. ახლა გახსენი მთავარი გვერდი.`;$('#go').disabled=true}catch(x){$('#msg').innerHTML='<span class="red">შეცდომა: '+x.message+'</span>'}};
+</script></body></html>

@@ -1,0 +1,12127 @@
+[
+{
+"name": "ოლეგ ტოვსტელევ",
+"floor": "",
+"apt": "403",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 110905.5,
+"cur": "USD",
+"down": 0.0,
+"term": 23,
+"start": "2023-10",
+"day": 5,
+"sched": [
+{
+"plan": 34125.5,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3350.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3350.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3350.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3350.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3350.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3550.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3550.0,
+"pc": "GEL",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3490.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 7100.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": 3630.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №1, 04.10.2023 | შესამოწმებელი: R4: ლარით, კურსი არ არის; S4: ლარით, კურსი არ არის; T4: ლარით, კურსი არ არის; U4: ლარით, კურსი არ არის; V4: ლარით, კურსი არ არის; W4: ლარით, კურსი არ არის; გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 3490.0)"
+},
+{
+"name": "ალექსეენკო ანდრეი",
+"floor": "",
+"apt": "413",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 57000.0,
+"cur": "USD",
+"down": 18000.0,
+"term": 7,
+"start": "2023-10",
+"day": 5,
+"sched": [
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1334.0,
+"paid": 1334.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1334.0,
+"paid": 1334.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1334.0,
+"paid": 1334.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1334.0,
+"paid": 1334.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1334.0,
+"paid": 1334.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 25330.0,
+"paid": 25330.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №1.2, 04.10.2023 | შესამოწმებელი: ხელშეკრულების №-ის ნაცვლად თარიღი იყო ჩაწერილი"
+},
+{
+"name": "კუზნეცოვა ოლგა",
+"floor": "",
+"apt": "412",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68250.0,
+"cur": "USD",
+"down": 0.0,
+"term": 25,
+"start": "2023-10",
+"day": 5,
+"sched": [
+{
+"plan": 40000.0,
+"paid": 40000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": 11770.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1177.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1179.0,
+"paid": 16480.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №3, 05.10.2023"
+},
+{
+"name": "ბესიკ მოწყობილი",
+"floor": "",
+"apt": "404",
+"phone": "558420002",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68643.0,
+"cur": "USD",
+"down": 0.0,
+"term": 27,
+"start": "2023-10",
+"day": 5,
+"sched": [
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5722.0,
+"paid": 5722.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2199.0,
+"paid": 2199.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2199.0,
+"paid": 2199.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2220.0,
+"paid": 2220.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2220.0,
+"paid": 2220.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2190.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2189.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2191.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2186.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2187.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2175.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2200.0,
+"paid": 2184.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 11870.0,
+"paid": 4400.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №4, 06.10.2023 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -9387.0)"
+},
+{
+"name": "ანდრეი ალექსეენკო",
+"floor": "",
+"apt": "901",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 41785.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2023-11",
+"day": 9,
+"sched": [
+{
+"plan": 41785.0,
+"paid": 41785.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №5, 09.11.2023"
+},
+{
+"name": "მარინა ალექსეევა",
+"floor": "",
+"apt": "407",
+"phone": "558025104",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 56738.5,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2023-11",
+"day": 30,
+"sched": [
+{
+"plan": 56739.0,
+"paid": 56739.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №6, 30.11.2023"
+},
+{
+"name": "პაატა გულიაშვილი",
+"floor": "",
+"apt": "703",
+"phone": "599611112",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 42960.0,
+"cur": "USD",
+"down": 0.0,
+"term": 76,
+"start": "2024-03",
+"day": 28,
+"sched": [
+{
+"plan": 4960.0,
+"paid": 4960.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1502.74,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1340.0,
+"pc": "GEL",
+"rate": 2.6788
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.23,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 501.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 537.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 537.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 542.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 545.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 557.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 560.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 560.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №7, 11.03.2024 | შესამოწმებელი: P16: ორი გადახდის ჯამი (ფორმულა); გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 500.0)"
+},
+{
+"name": "ნიკა არაბიძე",
+"floor": "",
+"apt": "503",
+"phone": "551 565 565",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 43080.0,
+"cur": "USD",
+"down": 0.0,
+"term": 76,
+"start": "2024-03",
+"day": 28,
+"sched": [
+{
+"plan": 5080.0,
+"paid": 5080.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1350.0,
+"pc": "GEL",
+"rate": 2.6797
+},
+{
+"plan": 500.0,
+"paid": 1350.0,
+"pc": "GEL",
+"rate": 2.6797
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 510.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 495.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1056.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 537.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 543.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 551.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 556.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 550.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 552.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 555.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 556.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 557.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 560.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 555.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №8, 11.03.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 500.0)"
+},
+{
+"name": "თამარ შუბითიძე",
+"floor": "",
+"apt": "409",
+"phone": "577 698 891",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 24245.0,
+"cur": "USD",
+"down": 0.0,
+"term": 8,
+"start": "2024-03",
+"day": 1,
+"sched": [
+{
+"plan": 21385.0,
+"paid": 21385.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2860.0,
+"paid": 2860.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №9, 22.03.2024"
+},
+{
+"name": "დავით მაკარაძე",
+"floor": "",
+"apt": "908",
+"phone": "599 08 16 79",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68527.0,
+"cur": "USD",
+"down": 0.0,
+"term": 136,
+"start": "2024-04",
+"day": 25,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 502.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 499.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 499.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 527.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №10, 11.04.2024"
+},
+{
+"name": "ბონდო მაკარაძე",
+"floor": "",
+"apt": "809",
+"phone": "593576427",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 63204.0,
+"cur": "USD",
+"down": 0.0,
+"term": 126,
+"start": "2024-04",
+"day": 25,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 492.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 501.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 499.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 204.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №11, 17.04.2024"
+},
+{
+"name": "ირაკლი სიხარულიძე",
+"floor": "",
+"apt": "502",
+"phone": "551722299",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 53760.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-04",
+"day": 23,
+"sched": [
+{
+"plan": 53760.0,
+"paid": 53760.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №14, 23.04.2024"
+},
+{
+"name": "მანანა სიხარულიძე",
+"floor": "",
+"apt": "402",
+"phone": "599506902",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 49665.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-04",
+"day": 23,
+"sched": [
+{
+"plan": 49665.0,
+"paid": 49665.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №12, 23.04.2024"
+},
+{
+"name": "დავით სიხარულიძე",
+"floor": "",
+"apt": "411",
+"phone": "599539394",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 61320.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-04",
+"day": 23,
+"sched": [
+{
+"plan": 61320.0,
+"paid": 61320.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №13, 23.04.2024"
+},
+{
+"name": "შპს თაიმსერვისი სულეიმან ჩიხლაძე",
+"floor": "",
+"apt": "1102",
+"phone": "579 287757",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 38735.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-04",
+"day": 17,
+"sched": [
+{
+"plan": 38735.0,
+"paid": 38735.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №15, 19.04.2024"
+},
+{
+"name": "შპს თაიმსერვისი სულეიმან ჩიხლაძე",
+"floor": "",
+"apt": "802",
+"phone": "579 287757",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 38841.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-04",
+"day": 17,
+"sched": [
+{
+"plan": 38841.0,
+"paid": 38841.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №16, 19.04.2024"
+},
+{
+"name": "ალექსეენკო ოლგა",
+"floor": "",
+"apt": "1002",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 39650.0,
+"cur": "USD",
+"down": 0.0,
+"term": 16,
+"start": "2024-04",
+"day": 5,
+"sched": [
+{
+"plan": 5650.0,
+"paid": 5650.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2750.0,
+"pc": "GEL",
+"rate": 2.691
+},
+{
+"plan": 1000.0,
+"paid": 5150.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 20000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №17, 17.04.2024"
+},
+{
+"name": "ელენე ნოღაიდელი",
+"floor": "",
+"apt": "704",
+"phone": "995557836060",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 72670.0,
+"cur": "USD",
+"down": 0.0,
+"term": 27,
+"start": "2024-04",
+"day": 5,
+"sched": [
+{
+"plan": 21801.0,
+"paid": 21801.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2106.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2120.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2119.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2114.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2120.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2110.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2119.0,
+"paid": 2120.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2132.0,
+"paid": 2132.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 24.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №18, 24.04.2024"
+},
+{
+"name": "პაველ ადეიშვილი",
+"floor": "",
+"apt": "607",
+"phone": "579 51 44 33",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 54054.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2024-04",
+"day": 5,
+"sched": [
+{
+"plan": 24500.0,
+"paid": 24500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 1554.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2250.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2054.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №19, 19"
+},
+{
+"name": "ცისანა ჩელებაძე",
+"floor": "",
+"apt": "303",
+"phone": "599150813",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 20535.0,
+"cur": "USD",
+"down": 0.0,
+"term": 30,
+"start": "2024-06",
+"day": 12,
+"sched": [
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6500.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 5500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 1396.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5635.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №22, 10.05.2024"
+},
+{
+"name": "ნატალია ბურდასტიხ",
+"floor": "",
+"apt": "1003",
+"phone": "551022711",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 57750.0,
+"cur": "USD",
+"down": 0.0,
+"term": 28,
+"start": "2024-06",
+"day": 10,
+"sched": [
+{
+"plan": 3500.0,
+"paid": 3500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2169.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2170.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 2170.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №23, 06.06.2024"
+},
+{
+"name": "ევგენიი გერცბერგ",
+"floor": "",
+"apt": "708",
+"phone": "972532502823",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 66402.0,
+"cur": "USD",
+"down": 0.0,
+"term": 25,
+"start": "2024-06",
+"day": 25,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4921.0,
+"paid": 4921.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2021.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2020.0,
+"paid": 2021.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2020.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №24, 07.06.2024"
+},
+{
+"name": "ევგენიი გერცბერგ",
+"floor": "",
+"apt": "1208",
+"phone": "972532502823",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 75000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 25,
+"start": "2024-06",
+"day": 25,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2500.0,
+"paid": 2500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2373.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №25, 07.06.2024"
+},
+{
+"name": "ევგენიი გერცბერგ",
+"floor": "",
+"apt": "1009",
+"phone": "972532502823",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 75000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 25,
+"start": "2024-06",
+"day": 25,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2500.0,
+"paid": 2500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2507.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2390.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2265.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2387.0,
+"paid": 2387.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2373.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №26, 07.06.2024"
+},
+{
+"name": "მაგდა კოსტავა",
+"floor": "",
+"apt": "313",
+"phone": "595 51 55 55",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 58539.0,
+"cur": "USD",
+"down": 0.0,
+"term": 32,
+"start": "2024-06",
+"day": 15,
+"sched": [
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 504.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №27, 25.06.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 36039.0)"
+},
+{
+"name": "კონსტანტინე ნასარაია",
+"floor": "",
+"apt": "406",
+"phone": "593352406",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 36576.0,
+"cur": "USD",
+"down": 0.0,
+"term": 20,
+"start": "2024-07",
+"day": 5,
+"sched": [
+{
+"plan": 24576.0,
+"paid": 24576.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №28, 04.07.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 2500.0)"
+},
+{
+"name": "მაია ბედუკაძე",
+"floor": "",
+"apt": "610",
+"phone": "551027700",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 52670.0,
+"cur": "USD",
+"down": 52670.0,
+"term": 0,
+"start": "",
+"day": 18,
+"sched": [],
+"note": "ხელშ. №29, 18.07.2024"
+},
+{
+"name": "მიხეილ მელაძე",
+"floor": "",
+"apt": "1202",
+"phone": "599 08 98 99",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 41175.0,
+"cur": "USD",
+"down": 0.0,
+"term": 19,
+"start": "2024-07",
+"day": 10,
+"sched": [
+{
+"plan": 18000.0,
+"paid": 18000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 14675.0,
+"paid": 14675.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №30, 22.07.2024"
+},
+{
+"name": "ალეკსეი რევიაგინი",
+"floor": "",
+"apt": "510",
+"phone": "7 906 684-81-87",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 58015.0,
+"cur": "USD",
+"down": 0.0,
+"term": 19,
+"start": "2024-07",
+"day": 30,
+"sched": [
+{
+"plan": 18000.0,
+"paid": 18000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 11008.0,
+"paid": 11008.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 7252.0,
+"paid": 9.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 3700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3626.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3626.0,
+"paid": 3662.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3626.0,
+"paid": 3662.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3626.0,
+"paid": 7500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 3490.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №31, 30.07.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 7251.0)"
+},
+{
+"name": "დავითი ფაილოძე",
+"floor": "",
+"apt": "311",
+"phone": "571 51 77 77. 558 79 79 99",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68310.0,
+"cur": "USD",
+"down": 0.0,
+"term": 28,
+"start": "2024-08",
+"day": 5,
+"sched": [
+{
+"plan": 18000.0,
+"paid": 18000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 1113.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 1132.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 800.0,
+"paid": 1156.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 35110.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №32, 09.08.2024"
+},
+{
+"name": "თეონა მამრიკიშვილი",
+"floor": "",
+"apt": "511",
+"phone": "558 74 96 46",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68310.0,
+"cur": "USD",
+"down": 1000.0,
+"term": 25,
+"start": "2024-08",
+"day": 20,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 18810.0,
+"paid": 18810.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №33, 5.08.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -1000.0)"
+},
+{
+"name": "გიორგი უბილავა",
+"floor": "",
+"apt": "312",
+"phone": "595088775",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 75628.0,
+"cur": "USD",
+"down": 0.0,
+"term": 150,
+"start": "2024-09",
+"day": 5,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 628.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №34, 9.08.2024"
+},
+{
+"name": "ალექსეენკო ანდრეი",
+"floor": "",
+"apt": "ავტო-007",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-12",
+"day": 21,
+"sched": [
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №35, 21.08.2024"
+},
+{
+"name": "ლამარა ქოქიაური",
+"floor": "",
+"apt": "301",
+"phone": "591705500",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 141310.0,
+"cur": "USD",
+"down": 0.0,
+"term": 26,
+"start": "2024-08",
+"day": 15,
+"sched": [
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 9000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 9000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 6000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 1766.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 21000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 67310.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 1154.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №36, 27.08.2024"
+},
+{
+"name": "ალექსეი რევიაგინ",
+"floor": "",
+"apt": "ავტო 18",
+"phone": "7 906 684-81-87",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 8,
+"start": "2024-08",
+"day": 10,
+"sched": [
+{
+"plan": 2100.0,
+"paid": 2100.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2450.0,
+"paid": 2250.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2450.0,
+"paid": 2450.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №37, 29.08.2024"
+},
+{
+"name": "ნათია ბროლაძე",
+"floor": "",
+"apt": "306",
+"phone": "598826018",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 35052.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2024-08",
+"day": 29,
+"sched": [
+{
+"plan": 35052.0,
+"paid": 35052.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №38, 29.08.2024"
+},
+{
+"name": "როზა მეკერ",
+"floor": "",
+"apt": "1203",
+"phone": "972537555415",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 66000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 20,
+"start": "2024-08",
+"day": 5,
+"sched": [
+{
+"plan": 300.0,
+"paid": 300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 25000.0,
+"paid": 24980.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 8000.0,
+"paid": 8020.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 2700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 23700.0,
+"paid": 24000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №39, 30.08.2024 | შესამოწმებელი: Z76: უჯრაში ჩაწერილია: «500\\2000$», ხელით შეამოწმე"
+},
+{
+"name": "ჰანს დიითერ",
+"floor": "",
+"apt": "1101",
+"phone": "491785330814",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 116313.0,
+"cur": "USD",
+"down": 0.0,
+"term": 5,
+"start": "2024-09",
+"day": 15,
+"sched": [
+{
+"plan": 28000.0,
+"paid": 28000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 43313.0,
+"paid": 43313.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №40, 06.09.2024"
+},
+{
+"name": "ჰანს დიითერ",
+"floor": "",
+"apt": "ავტო 12",
+"phone": "995551315965",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 6340.0,
+"cur": "USD",
+"down": 0.0,
+"term": 5,
+"start": "2024-09",
+"day": 15,
+"sched": [
+{
+"plan": 905.0,
+"paid": 905.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2435.0,
+"paid": 2435.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №41, 12.09.2024"
+},
+{
+"name": "იური ლიმარევ",
+"floor": "",
+"apt": "707",
+"phone": "7 916 596-91-22",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 53453.0,
+"cur": "USD",
+"down": 0.0,
+"term": 17,
+"start": "2024-09",
+"day": 5,
+"sched": [
+{
+"plan": 24250.0,
+"paid": 24250.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1828.0,
+"paid": 1828.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 1825.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 1825.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 3650.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 3650.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 5475.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 3643.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 1825.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 1825.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1825.0,
+"paid": 1825.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №42, 18.09.2024"
+},
+{
+"name": "ვიქტორ შადრინ",
+"floor": "",
+"apt": "801",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 127926.0,
+"cur": "USD",
+"down": 2000.0,
+"term": 0,
+"start": "",
+"day": 2,
+"sched": [],
+"note": "ხელშ. №43, 2.10.2024"
+},
+{
+"name": "გილად ვოლფ",
+"floor": "",
+"apt": "905",
+"phone": "972 50-869-0890",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 55700.0,
+"cur": "USD",
+"down": 0.0,
+"term": 17,
+"start": "2024-10",
+"day": 11,
+"sched": [
+{
+"plan": 32000.0,
+"paid": 32000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 6585.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 6585.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 3951.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 6575.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1317.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №44, 10.10.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 2628.0)"
+},
+{
+"name": "რაისა მოწყობილი",
+"floor": "",
+"apt": "512",
+"phone": "972503540274",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 70080.0,
+"cur": "USD",
+"down": 0.0,
+"term": 18,
+"start": "2024-10",
+"day": 10,
+"sched": [
+{
+"plan": 26000.0,
+"paid": 26000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 690.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 12073.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 9043.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 10232.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 3099.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 32880.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №45, 15.10.2024"
+},
+{
+"name": "ლუკა დუბრანოვი",
+"floor": "",
+"apt": "513",
+"phone": "972 52-960-2313",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 65412.0,
+"cur": "USD",
+"down": 0.0,
+"term": 24,
+"start": "2024-10",
+"day": 28,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1023.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1032.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1037.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1010.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1982.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1002.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 992.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 3700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 989.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 979.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 988.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 988.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 990.0,
+"paid": 989.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 9943.0,
+"paid": 10007.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3700.0,
+"paid": 3707.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3700.0,
+"paid": 3707.48,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2500.0,
+"paid": 2505.23,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 29565.0,
+"paid": 3973.86,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4928.16,
+"paid": 4928.16,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 18899.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №46, 18.10.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -4914.16)"
+},
+{
+"name": "ანა მჟავანაძე",
+"floor": "",
+"apt": "504",
+"phone": "555819292",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 69750.0,
+"cur": "USD",
+"down": 0.0,
+"term": 18,
+"start": "2024-12",
+"day": 5,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 959.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 902.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 979.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 952.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 993.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 964.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 964.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 969.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 989.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 969.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 47250.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №47, 8.11.2024"
+},
+{
+"name": "ალიონა ფროლოვა",
+"floor": "",
+"apt": "308",
+"phone": "380 50 923 7542",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 49140.0,
+"cur": "USD",
+"down": 0.0,
+"term": 16,
+"start": "2025-01",
+"day": 5,
+"sched": [
+{
+"plan": 24570.0,
+"paid": 24570.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 1950.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 1700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1755.0,
+"paid": 2220.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1700.0,
+"paid": 1700.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №48, 28.11.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -1700.0)"
+},
+{
+"name": "DZMITRY VARASHYLAU",
+"floor": "",
+"apt": "408",
+"phone": "551154396",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 48000.0,
+"cur": "USD",
+"down": 2500.0,
+"term": 1,
+"start": "2024-12",
+"day": 11,
+"sched": [
+{
+"plan": 45500.0,
+"paid": 45500.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №49, 11.12.2024"
+},
+{
+"name": "ეკატერინე ხვედელიძე",
+"floor": "",
+"apt": "302",
+"phone": "577 20 80 65",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 65280.0,
+"cur": "USD",
+"down": 0.0,
+"term": 23,
+"start": "2024-12",
+"day": 12,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 15000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 6000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 6300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 1289.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1300.0,
+"paid": 8300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 24880.0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 1300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 2600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 5080.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №50, 27.12.2024 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 5000.0)"
+},
+{
+"name": "ოლგა კუზნეცოვა",
+"floor": "",
+"apt": "ავტო-006",
+"phone": "",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7000.0,
+"cur": "USD",
+"down": 7000.0,
+"term": 0,
+"start": "",
+"day": 19,
+"sched": [],
+"note": "ხელშ. №0, 19.08.2024"
+},
+{
+"name": "ბაკური კვირკველია",
+"floor": "",
+"apt": "304",
+"phone": "579131346",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 66402.0,
+"cur": "USD",
+"down": 0.0,
+"term": 20,
+"start": "2025-02",
+"day": 15,
+"sched": [
+{
+"plan": 5000.0,
+"paid": 4957.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1004.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 43402.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №52, 3.02.2025"
+},
+{
+"name": "თინათინ ზარაფიშვილი",
+"floor": "",
+"apt": "505",
+"phone": "599 98 88 08",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 53200.0,
+"cur": "USD",
+"down": 0.0,
+"term": 14,
+"start": "2025-02",
+"day": 17,
+"sched": [
+{
+"plan": 40000.0,
+"paid": 40000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1200.0,
+"paid": 1200.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №53, 17.02.2025"
+},
+{
+"name": "ლიანა გოგელია",
+"floor": "",
+"apt": "803",
+"phone": "555176949",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 62500.0,
+"cur": "USD",
+"down": 0.0,
+"term": 19,
+"start": "2025-03",
+"day": 11,
+"sched": [
+{
+"plan": 20000.0,
+"paid": 20000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 9500.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4500.0,
+"paid": 4500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 2.9,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №54, 11.03.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -4500.0)"
+},
+{
+"name": "იგორ რიჟკო",
+"floor": "",
+"apt": "608",
+"phone": "380 50 378 4047",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 51000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 16,
+"start": "2025-03",
+"day": 20,
+"sched": [
+{
+"plan": 15000.0,
+"paid": 14200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 2300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 2300.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 2600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 1900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 2600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": 2100.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2300.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 8400.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 4941.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №55, 20.03.2025"
+},
+{
+"name": "ილია კაკალაძე",
+"floor": "",
+"apt": "611",
+"phone": "551818160",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 65280.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-02",
+"day": 19,
+"sched": [
+{
+"plan": 65280.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №56, 14.03.2025"
+},
+{
+"name": "რევაზ მამულაძე",
+"floor": "",
+"apt": "310",
+"phone": "514332525",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 55100.0,
+"cur": "USD",
+"down": 0.0,
+"term": 18,
+"start": "2025-03",
+"day": 19,
+"sched": [
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 2500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 7278.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 42100.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №57, 19.03.2025"
+},
+{
+"name": "ილია კაკალაძე",
+"floor": "",
+"apt": "ავტო010",
+"phone": "551818160",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-03",
+"day": 21,
+"sched": [
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №58, 21.03.2025 | შესამოწმებელი: AQ113: უჯრაში ჩაწერილია: «~»"
+},
+{
+"name": "იოსები ბეგლარaშვილი",
+"floor": "",
+"apt": "808",
+"phone": "+1(639) 318-5456",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 65728.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-03",
+"day": 28,
+"sched": [
+{
+"plan": 65728.0,
+"paid": 65728.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №59, 28.03.2025"
+},
+{
+"name": "იოსები ბეგლარaშვილი",
+"floor": "",
+"apt": "ავტო8",
+"phone": "+1(639) 318-5456",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7500.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-03",
+"day": 28,
+"sched": [
+{
+"plan": 7500.0,
+"paid": 7500.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №60, 28.03.2025"
+},
+{
+"name": "ლაშა ფაილაძე",
+"floor": "",
+"apt": "611",
+"phone": "577 10 09 11",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 47920.0,
+"cur": "USD",
+"down": 0.0,
+"term": 15,
+"start": "2025-03",
+"day": 31,
+"sched": [
+{
+"plan": 12920.0,
+"paid": 12920.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 900.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 24200.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №61, 31.03.2025"
+},
+{
+"name": "ლაშა ფაილაძე",
+"floor": "",
+"apt": "ავტო11",
+"phone": "577 10 09 11",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 7000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 12,
+"start": "2025-04",
+"day": 31,
+"sched": [
+{
+"plan": 700.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 700.0,
+"paid": 700.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №62, 31.03.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -1400.0)"
+},
+{
+"name": "ზურა  კასარელი",
+"floor": "",
+"apt": "705",
+"phone": "551 99 01 88",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 63840.0,
+"cur": "USD",
+"down": 0.0,
+"term": 23,
+"start": "2025-04",
+"day": 5,
+"sched": [
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 4000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 4000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 19840.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №63, 10.04.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "მეკერი ავტო",
+"floor": "",
+"apt": "9",
+"phone": "972537555415",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 8000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 6,
+"start": "2025-04",
+"day": 15,
+"sched": [
+{
+"plan": 4000.0,
+"paid": 4000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4000.0,
+"paid": 4000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №65, 14.04.2025"
+},
+{
+"name": "ფიქრია ცეცხლაძე",
+"floor": "",
+"apt": "501",
+"phone": "595850802",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 78480.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-04",
+"day": 3,
+"sched": [
+{
+"plan": 78480.0,
+"paid": 78480.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №66, 1.04.2025"
+},
+{
+"name": "ელდარ ერაძე",
+"floor": "",
+"apt": "806",
+"phone": "599572107",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 54600.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-04",
+"day": 11,
+"sched": [
+{
+"plan": 54600.0,
+"paid": 54600.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №67, 11.04.2025"
+},
+{
+"name": "ეკატერინე მგელაძე",
+"floor": "",
+"apt": "801ა",
+"phone": "555162811",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 56520.0,
+"cur": "USD",
+"down": 0.0,
+"term": 18,
+"start": "2025-04",
+"day": 24,
+"sched": [
+{
+"plan": 28256.0,
+"paid": 28260.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 28260.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 28264.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №68, 24.04.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 4.0)"
+},
+{
+"name": "აილა ვარან",
+"floor": "",
+"apt": "1001",
+"phone": "905305670804",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 134550.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-04",
+"day": 30,
+"sched": [
+{
+"plan": 45000.0,
+"paid": 44810.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 23000.0,
+"paid": 22718.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 6000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 18154.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 5999.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 11029.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 7088.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 12128.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6050.0,
+"paid": 6078.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №69, 29.04.2025"
+},
+{
+"name": "თამთა მამისეიშვილი",
+"floor": "",
+"apt": "605",
+"phone": "79261436060",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 61560.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-05",
+"day": 19,
+"sched": [
+{
+"plan": 35321.0,
+"paid": 47487.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 999.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 9077.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 15239.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №70, 22.05.2025"
+},
+{
+"name": "რუსუდან იოსელიანი",
+"floor": "",
+"apt": "307",
+"phone": "557716867",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 50490.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-05",
+"day": 10,
+"sched": [
+{
+"plan": 20000.0,
+"paid": 20000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 19490.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №71, 22.05.2025"
+},
+{
+"name": "ზურაბ ჭრელაშვილი",
+"floor": "",
+"apt": "305",
+"phone": "555644446",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 61180.0,
+"cur": "USD",
+"down": 0.0,
+"term": 17,
+"start": "2025-05",
+"day": 29,
+"sched": [
+{
+"plan": 25000.0,
+"paid": 25000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 11000.0,
+"paid": 11000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 9000.0,
+"paid": 9000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5400.0,
+"paid": 5400.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3600.0,
+"paid": 3600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 180.0,
+"paid": 180.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №72, 28.05.2025"
+},
+{
+"name": "ალიონა პოლეცკიი",
+"floor": "",
+"apt": "902",
+"phone": "380675919116",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 79200.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-06",
+"day": 18,
+"sched": [
+{
+"plan": 16000.0,
+"paid": 16000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 40000.0,
+"paid": 40000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2109.0,
+"paid": 2109.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2110.0,
+"paid": 1135.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №73, 6.06.2025"
+},
+{
+"name": "მაკა გელხვიიძე",
+"floor": "",
+"apt": "709",
+"phone": "595533786",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 84000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-06",
+"day": 11,
+"sched": [
+{
+"plan": 10000.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 57538.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №74, 11.06.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -38.0)"
+},
+{
+"name": "ეკატერინე ღამბაშიძე",
+"floor": "",
+"apt": "405",
+"phone": "595 65 75 59",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 58995.0,
+"cur": "USD",
+"down": 10000.0,
+"term": 1,
+"start": "2025-06",
+"day": 24,
+"sched": [
+{
+"plan": 58995.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №75, 24.06.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -10000.0)"
+},
+{
+"name": "ნინო ბოჭორიშვილი",
+"floor": "",
+"apt": "1201",
+"phone": "514393232",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 125440.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-06",
+"day": 8,
+"sched": [
+{
+"plan": 125440.0,
+"paid": 125440.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №76, 08.07.2025"
+},
+{
+"name": "იოსებ ჟანა",
+"floor": "",
+"apt": "808",
+"phone": "591007071",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 71876.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-06",
+"day": 10,
+"sched": [
+{
+"plan": 71876.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №77, 10.07.2025"
+},
+{
+"name": "თამარ კოპაძე",
+"floor": "",
+"apt": "501ა",
+"phone": "593 92 20 18",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 44011.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-07",
+"day": 11,
+"sched": [
+{
+"plan": 22000.0,
+"paid": 22009.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1798.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1800.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 11011.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №78, 11.07.2025"
+},
+{
+"name": "თეო ბულია",
+"floor": "",
+"apt": "1302",
+"phone": "41 77 523 47 33",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 49050.0,
+"cur": "USD",
+"down": 20000.0,
+"term": 20,
+"start": "2025-07",
+"day": 22,
+"sched": [
+{
+"plan": 24600.0,
+"paid": 24600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1503.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1950.0,
+"paid": 1945.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №79, 22.07.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -20000.0)"
+},
+{
+"name": "ინგა აროშიძე",
+"floor": "",
+"apt": "904",
+"phone": "7 911 649-17-08",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 71788.0,
+"cur": "USD",
+"down": 780.0,
+"term": 14,
+"start": "2025-08",
+"day": 13,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 780.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 34894.0,
+"paid": 35183.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5982.0,
+"paid": 5997.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5982.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 14500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5982.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5982.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5982.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5984.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №80, 13.08.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -780.0)"
+},
+{
+"name": "კონსტანტინე ნასარაია",
+"floor": "",
+"apt": "708 ბ",
+"phone": "593352406",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 47600.0,
+"cur": "USD",
+"down": 0.0,
+"term": 7,
+"start": "2025-08",
+"day": 5,
+"sched": [
+{
+"plan": 35600.0,
+"paid": 35600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1001.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 8000.0,
+"paid": 8000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №81, 18.08.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ლატას გედვიდას",
+"floor": "",
+"apt": "1301",
+"phone": "593352406",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 113750.0,
+"cur": "USD",
+"down": 0.0,
+"term": 10,
+"start": "2025-08",
+"day": 5,
+"sched": [
+{
+"plan": 1000.0,
+"paid": 1000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 29000.0,
+"paid": 29000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": 9990.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 50000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 35965.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 23740.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №82, 29.08.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 10.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ვარდან ალოიანი",
+"floor": "",
+"apt": "208",
+"phone": "37498180626",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 34295.0,
+"cur": "USD",
+"down": 0.0,
+"term": 14,
+"start": "2025-09",
+"day": 5,
+"sched": [
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10289.0,
+"paid": 10289.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 19006.0,
+"paid": 1500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 2500.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №83, 1.10.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ვიკტორია ტოვსტელევა",
+"floor": "",
+"apt": "708ა",
+"phone": "375 29 171-35-56",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 60900.0,
+"cur": "USD",
+"down": 0.0,
+"term": 14,
+"start": "2025-10",
+"day": 5,
+"sched": [
+{
+"plan": 10000.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": 5987.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": 10386.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10900.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №84, 1.10.2025  | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "გინტარას ლატაკასი",
+"floor": "",
+"apt": "1303",
+"phone": "44 7880 884490",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 70015.0,
+"cur": "USD",
+"down": 850.0,
+"term": 11,
+"start": "2025-10",
+"day": 5,
+"sched": [
+{
+"plan": 35116.0,
+"paid": 35116.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6980.0,
+"paid": 7042.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6980.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6980.0,
+"paid": 7979.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6980.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6979.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №85, 7.10.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -850.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "გეგი გოგიტიძე",
+"floor": "",
+"apt": "608ა",
+"phone": "599040781",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 58000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 14,
+"start": "2025-10",
+"day": 5,
+"sched": [
+{
+"plan": 20000.0,
+"paid": 20000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1202.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 752.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 504.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1081.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 502.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 1062.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 838.95,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 500.0,
+"paid": 768.66,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 32500.0,
+"paid": 962.31,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 21726.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №86, 17.10.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "კირეევა  თამარა",
+"floor": "",
+"apt": "808ა",
+"phone": "79522031004",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 56260.0,
+"cur": "USD",
+"down": 0.0,
+"term": 4,
+"start": "2025-10",
+"day": 5,
+"sched": [
+{
+"plan": 29000.0,
+"paid": 29000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 27260.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 27260.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №88, 21.10.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ანა ბოლქვაძე",
+"floor": "",
+"apt": "207",
+"phone": "579296049",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 38220.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2025-11",
+"day": 5,
+"sched": [
+{
+"plan": 6000.0,
+"paid": 6000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 600.0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 600.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 26220.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №89, 04.11.2025 | შესამოწმებელი: AU171: ჩაწერილია «$ 26 220»; გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 600.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "კონსტანტინე ზარნაძე",
+"floor": "",
+"apt": "804",
+"phone": "571084888",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 64000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 18,
+"start": "2025-11",
+"day": 5,
+"sched": [
+{
+"plan": 13500.0,
+"paid": 13500.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 3000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 9000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 9000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №90, 17.11.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "გინტარას ლატაკასი",
+"floor": "",
+"apt": "211",
+"phone": "44 7880 884490",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 36605.0,
+"cur": "USD",
+"down": 0.0,
+"term": 10,
+"start": "2025-11",
+"day": 5,
+"sched": [
+{
+"plan": 18400.0,
+"paid": 18400.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 25757.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4555.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4555.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 4540.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №91, 27.11.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 4555.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ანდრიუს დაბიჟა",
+"floor": "",
+"apt": "1309",
+"phone": "370645500557",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 75429.0,
+"cur": "USD",
+"down": 0.0,
+"term": 9,
+"start": "2025-11",
+"day": 5,
+"sched": [
+{
+"plan": 38865.0,
+"paid": 38865.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1564.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №92, 28.11.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "გიორგი არჩუაძე",
+"floor": "",
+"apt": "807",
+"phone": "599540575",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 48000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2025-12",
+"day": 5,
+"sched": [
+{
+"plan": 48000.0,
+"paid": 48000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №93, 12.12.2025 | შესამოწმებელი: K179: უჯრაში ჩაწერილია: « »; გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ტარას",
+"floor": "",
+"apt": "1006",
+"phone": "79290667938",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 60372.0,
+"cur": "USD",
+"down": 1000.0,
+"term": 2,
+"start": "2027-02",
+"day": 5,
+"sched": [
+{
+"plan": 3000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №94, 24.12.2025 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 53872.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "დავით პაპაშვილი",
+"floor": "",
+"apt": "203",
+"phone": "571271670",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 39000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 22,
+"start": "2025-12",
+"day": 5,
+"sched": [
+{
+"plan": 20000.0,
+"paid": 20000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 10000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 9000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №95, 25.12.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "მედეა აბჟანდაძე",
+"floor": "",
+"apt": "706",
+"phone": "577 64 00 63",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 70000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 1,
+"start": "2026-01",
+"day": 5,
+"sched": [
+{
+"plan": 70000.0,
+"paid": 70000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №96, 25.12.2025 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ხვიჩია ხათუნა",
+"floor": "",
+"apt": "206",
+"phone": "577511221",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 35006.0,
+"cur": "USD",
+"down": 0.0,
+"term": 10,
+"start": "2026-01",
+"day": 5,
+"sched": [
+{
+"plan": 10000.0,
+"paid": 10000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 25006.0,
+"paid": 0.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 14000.0,
+"paid": 14000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №97, 10.01.2026 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -14000.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ხვიჩია  ალექსანდრე",
+"floor": "",
+"apt": "210",
+"phone": "591190260",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 39000.0,
+"cur": "USD",
+"down": 0.0,
+"term": 10,
+"start": "2026-01",
+"day": 5,
+"sched": [
+{
+"plan": 6000.0,
+"paid": 6000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 33000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 0,
+"paid": 23000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №98, 10.01.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ნუგზარ მეგრელიძე",
+"floor": "",
+"apt": "1308",
+"phone": "591160101",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 57510.0,
+"cur": "USD",
+"down": 57510.0,
+"term": 0,
+"start": "",
+"day": 5,
+"sched": [],
+"note": "ხელშ. №99, 16.02.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ინესა ჩაევა",
+"floor": "",
+"apt": "1004",
+"phone": "7 927 277-44-50",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 85760.0,
+"cur": "USD",
+"down": 9000.0,
+"term": 1,
+"start": "2026-03",
+"day": 5,
+"sched": [
+{
+"plan": 63000.0,
+"paid": 63000.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №100, 6.03.2026 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 13760.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ანა მახარაძე",
+"floor": "",
+"apt": "204",
+"phone": "577560565",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 67142.0,
+"cur": "USD",
+"down": 0.0,
+"term": 0,
+"start": "",
+"day": 5,
+"sched": [],
+"note": "ხელშ. №101, 6.03.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ანასტასია ორლენსკაია",
+"floor": "",
+"apt": "1402",
+"phone": "7916582879",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 47905.5,
+"cur": "USD",
+"down": 10000.0,
+"term": 0,
+"start": "",
+"day": 5,
+"sched": [],
+"note": "ხელშ. №102, 16.05.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ჰენ ლუიზა,რომან ხახიაშვილი",
+"floor": "",
+"apt": "212",
+"phone": "972533482144",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 63250.0,
+"cur": "USD",
+"down": 0.0,
+"term": 10,
+"start": "2026-05",
+"day": 5,
+"sched": [
+{
+"plan": 20003.0,
+"paid": 20003.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 6988.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 6988.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 6988.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 6989.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 2786.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 2799.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": 1432.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1500.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 31247.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №103, 6.06.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ნატალია პოპოვა",
+"floor": "",
+"apt": "1409",
+"phone": "7 903 745-27-77",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 74495.0,
+"cur": "USD",
+"down": 0.0,
+"term": 5,
+"start": "2026-06",
+"day": 5,
+"sched": [
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 47246.0,
+"paid": 47246.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6749.0,
+"paid": 6749.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 7000.0,
+"paid": 7000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 6500.0,
+"paid": 6500.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №104, 12.06.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "არტურ სუვარიან",
+"floor": "",
+"apt": "1006",
+"phone": "3809805561082",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 69969.0,
+"cur": "USD",
+"down": 0.0,
+"term": 7,
+"start": "2026-07",
+"day": 5,
+"sched": [
+{
+"plan": 38902.0,
+"paid": 38902.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2100.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": 2200.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 900.0,
+"paid": 2180.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 1000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 26067.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №105, 08.07.2026 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 100.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ნატალია პოპოვა",
+"floor": "",
+"apt": "1206",
+"phone": "7 903 745-27-77",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 65532.0,
+"cur": "USD",
+"down": 0.0,
+"term": 2,
+"start": "2026-07",
+"day": 5,
+"sched": [
+{
+"plan": 54000.0,
+"paid": 54000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 11532.0,
+"paid": 11532.0,
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №106, 23.07.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ინგა ჩუთლაშვილი",
+"floor": "",
+"apt": "202",
+"phone": "436604804285",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 68900.0,
+"cur": "USD",
+"down": 0.0,
+"term": 13,
+"start": "2026-08",
+"day": 5,
+"sched": [
+{
+"plan": 2857.0,
+"paid": 2857.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": 3433.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": 12621.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": 10413.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 2857.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №107, 3.08.2026 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა 31759.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ალი ნედიმ ბოლუქოღლუ",
+"floor": "",
+"apt": "1105",
+"phone": "44273001562",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 88965.0,
+"cur": "USD",
+"down": 4983.0,
+"term": 7,
+"start": "2026-08",
+"day": 5,
+"sched": [
+{
+"plan": 5000.0,
+"paid": 4983.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": 5000.0,
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 5000.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+},
+{
+"plan": 58965.0,
+"paid": "",
+"pc": "USD",
+"rate": ""
+}
+],
+"note": "ხელშ. №108, 4.08.2026 | შესამოწმებელი: გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა -4983.0); გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+},
+{
+"name": "ელენე ოქროპირიძე",
+"floor": "",
+"apt": "1401",
+"phone": "555896565",
+"email": "",
+"sqm": "",
+"ppsqm": "",
+"total": 66080.0,
+"cur": "USD",
+"down": 0.0,
+"term": 0,
+"start": "",
+"day": 5,
+"sched": [],
+"note": "ხელშ. №109, 12.10.2026 | შესამოწმებელი: გადახდის დღე არ იყო მითითებული, ჩაწერილია 5"
+}
+]

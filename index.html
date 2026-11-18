@@ -50,7 +50,7 @@ const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
 const conv=(a,p,c,r)=>{a=+a||0;r=+r||0;if(!a||p==c)return a;if(!r)return 0;return c=='GEL'?a*r:p=='GEL'?a/r:a*r};
 const rl=(p,c)=>p==c?'':c=='GEL'?`1 ${p} = ? ₾`:p=='GEL'?`1 ${c} = ? ₾`:`1 ${p} = ? ${c}`;
 const due=(c,i)=>{const [y,m]=(c.start||'').split('-').map(Number);if(!y)return null;const dim=new Date(y,m+i,0).getDate();return new Date(y,m-1+i,Math.min(+c.day||1,dim))};
-const tot=c=>r2((+c.sqm||0)*(+c.ppsqm||0));
+const tot=c=>(+c.sqm&&+c.ppsqm)?r2(c.sqm*c.ppsqm):r2(+c.total||0);
 function calc(c){const s=c.sched||[],T=today(),total=tot(c),down=+c.down||0;let paid=0,req=down,cum=down;const cp=[],rows=[];
  s.forEach((x,i)=>{const p=conv(x.paid,x.pc,c.cur,x.rate),d=due(c,i),late=d&&d<=T,pl=+x.plan||0;paid+=p;cum+=pl;cp.push(cum);if(late)req+=pl;
   rows.push({p,d,st:late?(p>=pl-.005?'ok':p>0?'part':'late'):(p>0?(p>=pl-.005?'ok':'part'):'wait')})});
@@ -71,7 +71,7 @@ const rowsHtml=()=>cur.sched.map((x,i)=>`<tr data-i="${i}"><td>${i+1}</td><td cl
 function detail(){go('detail');
  const f=(k,l,t='text')=>`<div><label>${l}</label><input data-k="${k}" type="${t}" ${t=='number'?'step="any"':''} value="${cur[k]??''}"></div>`;
  $('#detail').innerHTML=`<div class="bar"><button class="g" id="back">← სიაში</button><button id="save">შენახვა</button>${cur.id?'<button class="d" id="del">წაშლა</button>':''}</div>
-<div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}</div>
+<div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}${f('note','შენიშვნა')}</div>
 <p><button class="g" id="gen">გრაფიკის გენერირება</button> <span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
 <div class="card" id="sum"></div>
 <div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>ვალუტა</th><th>კურსი</th><th>ხელშ. ვალუტაში</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
