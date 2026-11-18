@@ -1,24 +1,78 @@
 <!DOCTYPE html><html lang="ka"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>იმპორტი</title>
-<style>body{font:15px/1.5 system-ui,sans-serif;max-width:520px;margin:40px auto;padding:0 14px;color:#1f2937}input,select,button{font:inherit;padding:8px;width:100%;margin:5px 0}button{background:#2f4b6e;color:#fff;border:0;border-radius:6px;cursor:pointer}.red{color:#c0392b}.hidden{display:none}</style></head><body>
-<h3>კლიენტების ერთჯერადი იმპორტი</h3>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>body{font:15px/1.5 system-ui,sans-serif;max-width:520px;margin:40px auto;padding:0 14px;color:#1f2937}input,select,button{font:inherit;padding:8px;width:100%;margin:5px 0}button{background:#2f4b6e;color:#fff;border:0;border-radius:6px;cursor:pointer}button:disabled{opacity:.5}.red{color:#c0392b}.hidden{display:none}</style></head><body>
+<h3>კლიენტების ერთჯერადი იმპორტი ექსელიდან</h3>
 <form id="lf"><input id="em" type="email" placeholder="ელფოსტა" required><input id="pw" type="password" placeholder="პაროლი" required><button>შესვლა</button></form>
 <div id="app" class="hidden"><p id="info"></p>
-<label>აირჩიე ფაილი clients.json</label><input id="file" type="file" accept=".json">
+<label>აირჩიე შენი ექსელის ფაილი (დებიტორები.xlsx)</label><input id="file" type="file" accept=".xlsx,.xls">
+<p id="prev"></p>
 <label>ყველა კლიენტის ხელშეკრულების ვალუტა</label><select id="cur"><option>USD</option><option>EUR</option><option>GEL</option></select>
-<button id="go">იმპორტის დაწყება</button></div><p id="msg"></p>
+<button id="go" disabled>იმპორტის დაწყება</button></div><p id="msg"></p>
+<script>
+function convertSheet(XLSX, ws){
+  const cell=(r,c)=>ws[XLSX.utils.encode_cell({r:r-1,c:c-1})];
+  const num=x=>typeof x==='number'?x:null;
+  const parse=(cl,addr)=>{
+    if(!cl)return null;
+    const f=cl.f?String(cl.f).replace(/\s+/g,''):null;
+    if(f){let m;
+      if((m=f.match(/^\(?([\d.]+)\/([\d.]+)\)?$/)))return{a:+m[1],pc:'GEL',rate:+m[2]};
+      if((m=f.match(/^\(([\d.]+)\/([\d.]+)\)\+\(([\d.]+)\/([\d.]+)\)$/)))return{a:Math.round((m[1]/m[2]+m[3]/m[4])*100)/100,pc:null,rate:'',flag:'ორი გადახდის ჯამი (ფორმულა)'};
+      if(/^[A-Z]+\d+$/.test(f)&&num(cl.v)!==null)return{a:cl.v,pc:null,rate:''};
+      if(num(cl.v)!==null)return{a:cl.v,pc:null,rate:''};
+      return{skip:1,flag:addr+': ფორმულა «='+cl.f+'», შეამოწმე'};
+    }
+    if(typeof cl.v==='number')return{a:cl.v,pc:null,rate:''};
+    const s=String(cl.v??'').trim();let m;
+    if(!s||s==='~')return{skip:1,flag:addr+': უჯრაში ჩაწერილია «'+cl.v+'»'};
+    if((m=s.match(/^GEL\s*([\d,.]+)$/)))return{a:+m[1].replace(/,/g,''),pc:'GEL',rate:'',flag:addr+': ლარით, კურსი არ არის'};
+    if((m=s.match(/^\$\s*([\d\s]+)$/)))return{a:+m[1].replace(/\s/g,''),pc:null,rate:'',flag:addr+': ჩაწერილია «'+s+'»'};
+    return{skip:1,flag:addr+': უჯრაში ჩაწერილია «'+s+'», ხელით შეამოწმე'};
+  };
+  const range=XLSX.utils.decode_range(ws['!ref']);const out=[];const cur='USD';
+  for(let r=3;r<=range.e.r+1;r++){
+    const nm=cell(r,4);if(!nm||!String(nm.v).trim())continue;
+    const val=(c)=>{const x=cell(r,c);return x&&typeof x.v==='number'?x.v:0};
+    const G=val(7),H=val(8),flags=[],plan={},paid={};
+    for(let c=10;c<=170;c++)for(const [dest,rr] of [[plan,r],[paid,r+1]]){
+      const cl=cell(rr,c);const addr=XLSX.utils.encode_cell({r:rr-1,c:c-1});const p=parse(cl,addr);
+      if(!p)continue;if(p.flag)flags.push(p.flag.startsWith(addr)?p.flag:addr+': '+p.flag);if(p.skip)continue;dest[c]=p}
+    const cols=[...new Set([...Object.keys(plan),...Object.keys(paid)].map(Number))].sort((a,b)=>a-b);
+    let sched=[],start='',term=0;
+    if(cols.length){const c0=cols[0],c1=cols[cols.length-1],i=c0-10,y=2023+Math.floor((9+i)/12),m=(9+i)%12+1;start=y+'-'+String(m).padStart(2,'0');term=c1-c0+1;
+      for(let c=c0;c<=c1;c++){const pl=plan[c]?plan[c].a:0,pd=paid[c];sched.push({plan:Math.round(pl*100)/100,paid:pd?Math.round(pd.a*100)/100:'',pc:pd?(pd.pc||cur):cur,rate:pd?pd.rate:''})}}
+    const fp=cols.length&&plan[cols[0]]?plan[cols[0]].a:null;
+    const inside=sched.length&&H>0&&fp!==null&&Math.abs(fp-H)<.5;const down=inside?0:H;
+    const psum=sched.reduce((a,s)=>a+s.plan,0),diff=Math.round((G-down-psum)*100)/100;
+    if(sched.length&&Math.abs(diff)>.5)flags.push('გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა '+diff+')');
+    let day=cell(r,9)&&typeof cell(r,9).v==='number'?cell(r,9).v:null;
+    if(day===null){day=5;flags.push('გადახდის დღე არ იყო მითითებული, ჩაწერილია 5')}
+    let B=cell(r,2)?cell(r,2).v:null;
+    if(B instanceof Date){const d=new Date(B.getTime()+432e5);B=d.getDate()+'.'+(d.getMonth()+1);flags.push('ხელშეკრულების №-ის ნაცვლად თარიღი იყო ჩაწერილი')}
+    const C=cell(r,3)?cell(r,3).v:null;let ph=cell(r,6)?cell(r,6).v:null;ph=ph==null?'':String(ph).trim().replace(/\s+/g,' ');
+    let note='ხელშ. №'+(B!=null?B:'—')+', '+(C||'—');if(flags.length)note+=' | შესამოწმებელი: '+flags.join('; ');
+    out.push({name:String(nm.v).trim(),floor:'',apt:cell(r,5)&&cell(r,5).v!=null?String(cell(r,5).v).trim():'',phone:ph,email:'',sqm:'',ppsqm:'',total:G,cur,down,term,start,day,sched,note,_flag:flags.length?1:0});
+  }
+  return out}
+
+</script>
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {getAuth,signInWithEmailAndPassword,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {getFirestore,collection,getDocs,doc,writeBatch} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 const app=initializeApp({apiKey:"AIzaSyBNa4B-0hf_a13g3wW2ohK2xGKnOPqLbrY",authDomain:"debitorebi-baza.firebaseapp.com",projectId:"debitorebi-baza",storageBucket:"debitorebi-baza.firebasestorage.app",messagingSenderId:"269292067281",appId:"1:269292067281:web:d2330c15d3328af967a8f0"});
-const auth=getAuth(app),db=getFirestore(app),$=s=>document.querySelector(s);let n=0;
+const auth=getAuth(app),db=getFirestore(app),$=s=>document.querySelector(s);let n=0,arr=[];
 $('#lf').onsubmit=async e=>{e.preventDefault();try{await signInWithEmailAndPassword(auth,$('#em').value.trim(),$('#pw').value)}catch(x){$('#msg').innerHTML='<span class="red">არასწორი ელფოსტა ან პაროლი</span>'}};
 onAuthStateChanged(auth,async u=>{if(!u)return;$('#lf').classList.add('hidden');$('#app').classList.remove('hidden');
  try{n=(await getDocs(collection(db,'clients'))).size}catch(x){$('#msg').textContent='ბაზასთან წვდომის შეცდომა: '+x.message}
  $('#info').innerHTML=n?`<span class="red">ბაზაში უკვე ${n} კლიენტია. თუ ისევ ჩატვირთავ, დუბლიკატები გაჩნდება!</span>`:'ბაზა ცარიელია, შეგიძლია იმპორტი.'});
-$('#go').onclick=async()=>{const f=$('#file').files[0];if(!f){$('#msg').textContent='ჯერ აირჩიე ფაილი';return}
- if(n&&!confirm('ბაზაში უკვე არის კლიენტები. ნამდვილად გავაგრძელო?'))return;
- try{const arr=JSON.parse(await f.text());const b=writeBatch(db);
-  arr.forEach(c=>{c.cur=$('#cur').value;c.sched.forEach(x=>{if(x.pc!='GEL')x.pc=c.cur});b.set(doc(collection(db,'clients')),{...c,updatedBy:'იმპორტი ექსელიდან',updatedAt:Date.now()})});
-  await b.commit();$('#msg').textContent=`მზადაა: ჩაიტვირთა ${arr.length} კლიენტი. ახლა გახსენი მთავარი გვერდი.`;$('#go').disabled=true}catch(x){$('#msg').innerHTML='<span class="red">შეცდომა: '+x.message+'</span>'}};
+$('#file').onchange=async()=>{const f=$('#file').files[0];$('#go').disabled=true;$('#msg').textContent='';if(!f)return;
+ try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array',cellDates:true});arr=convertSheet(XLSX,wb.Sheets[wb.SheetNames[0]]);
+  $('#prev').textContent=`ნაპოვნია ${arr.length} კლიენტი, აქედან ${arr.filter(c=>c._flag).length}-ს აქვს შენიშვნა შესამოწმებელი.`;$('#go').disabled=!arr.length}
+ catch(x){$('#msg').innerHTML='<span class="red">ფაილი ვერ წავიკითხე: '+x.message+'</span>'}};
+$('#go').onclick=async()=>{if(n&&!confirm('ბაზაში უკვე არის კლიენტები. ნამდვილად გავაგრძელო?'))return;$('#go').disabled=true;
+ try{const b=writeBatch(db);
+  arr.forEach(c=>{const {_flag,...d}=c;d.cur=$('#cur').value;d.sched.forEach(x=>{if(x.pc!='GEL')x.pc=d.cur});b.set(doc(collection(db,'clients')),{...d,updatedBy:'იმპორტი ექსელიდან',updatedAt:Date.now()})});
+  await b.commit();$('#msg').textContent=`მზადაა: ჩაიტვირთა ${arr.length} კლიენტი. ახლა გახსენი მთავარი გვერდი.`}
+ catch(x){$('#msg').innerHTML='<span class="red">შეცდომა: '+x.message+'</span>';$('#go').disabled=false}};
 </script></body></html>
