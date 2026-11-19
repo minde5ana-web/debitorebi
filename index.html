@@ -30,15 +30,63 @@ td input,td select{min-width:85px;padding:5px}
 <button style="width:100%;margin-top:6px">შესვლა</button><p id="err" class="red"></p></form></div>
 <div id="list" class="hidden">
 <div class="cards" id="sums"></div>
-<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, ტელეფონი"><button id="new">+ ახალი კლიენტი</button><button class="g" id="exp">Excel-ში გადმოწერა</button><button class="g" id="out">გასვლა</button></div>
+<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, ტელეფონი"><button id="new">+ ახალი კლიენტი</button><div style="position:relative"><button class="g" id="mn">მენიუ ▾</button><div id="mm" class="card hidden" style="position:absolute;right:0;top:42px;z-index:5;width:250px;padding:6px"><button class="g" id="exp" style="width:100%;margin:3px 0">Excel-ში გადმოწერა</button><button class="g" id="imp" style="width:100%;margin:3px 0">იმპორტი ექსელიდან</button><button class="d" id="clr" style="width:100%;margin:3px 0">ბაზის სრული გასუფთავება</button><button class="g" id="out" style="width:100%;margin:3px 0">გასვლა</button></div></div><input type="file" id="fi" accept=".xlsx,.xls" class="hidden"></div>
 <div class="card wrap"><table><thead><tr><th>სახელი გვარი</th><th>სართული</th><th>ბინა</th><th>სტატუსი</th><th>დარჩენილი</th></tr></thead><tbody id="tb"></tbody></table></div>
 </div>
 <div id="detail" class="hidden"></div>
 </main>
+<script>
+function convertSheet(XLSX, ws){
+  const cell=(r,c)=>ws[XLSX.utils.encode_cell({r:r-1,c:c-1})];
+  const num=x=>typeof x==='number'?x:null;
+  const parse=(cl,addr)=>{
+    if(!cl)return null;
+    const f=cl.f?String(cl.f).replace(/\s+/g,''):null;
+    if(f){let m;
+      if((m=f.match(/^\(?([\d.]+)\/([\d.]+)\)?$/)))return{a:+m[1],pc:'GEL',rate:+m[2]};
+      if((m=f.match(/^\(([\d.]+)\/([\d.]+)\)\+\(([\d.]+)\/([\d.]+)\)$/)))return{a:Math.round((m[1]/m[2]+m[3]/m[4])*100)/100,pc:null,rate:'',flag:'ორი გადახდის ჯამი (ფორმულა)'};
+      if(/^[A-Z]+\d+$/.test(f)&&num(cl.v)!==null)return{a:cl.v,pc:null,rate:''};
+      if(num(cl.v)!==null)return{a:cl.v,pc:null,rate:''};
+      return{skip:1,flag:addr+': ფორმულა «='+cl.f+'», შეამოწმე'};
+    }
+    if(typeof cl.v==='number')return{a:cl.v,pc:null,rate:''};
+    const s=String(cl.v??'').trim();let m;
+    if(!s||s==='~')return{skip:1,flag:addr+': უჯრაში ჩაწერილია «'+cl.v+'»'};
+    if((m=s.match(/^GEL\s*([\d,.]+)$/)))return{a:+m[1].replace(/,/g,''),pc:'GEL',rate:'',flag:addr+': ლარით, კურსი არ არის'};
+    if((m=s.match(/^\$\s*([\d\s]+)$/)))return{a:+m[1].replace(/\s/g,''),pc:null,rate:'',flag:addr+': ჩაწერილია «'+s+'»'};
+    return{skip:1,flag:addr+': უჯრაში ჩაწერილია «'+s+'», ხელით შეამოწმე'};
+  };
+  const range=XLSX.utils.decode_range(ws['!ref']);const out=[];const cur='USD';
+  for(let r=3;r<=range.e.r+1;r++){
+    const nm=cell(r,4);if(!nm||!String(nm.v).trim())continue;
+    const val=(c)=>{const x=cell(r,c);return x&&typeof x.v==='number'?x.v:0};
+    const G=val(7),H=val(8),flags=[],plan={},paid={};
+    for(let c=10;c<=170;c++)for(const [dest,rr] of [[plan,r],[paid,r+1]]){
+      const cl=cell(rr,c);const addr=XLSX.utils.encode_cell({r:rr-1,c:c-1});const p=parse(cl,addr);
+      if(!p)continue;if(p.flag)flags.push(p.flag.startsWith(addr)?p.flag:addr+': '+p.flag);if(p.skip)continue;dest[c]=p}
+    const cols=[...new Set([...Object.keys(plan),...Object.keys(paid)].map(Number))].sort((a,b)=>a-b);
+    let sched=[],start='',term=0;
+    if(cols.length){const c0=cols[0],c1=cols[cols.length-1],i=c0-10,y=2023+Math.floor((9+i)/12),m=(9+i)%12+1;start=y+'-'+String(m).padStart(2,'0');term=c1-c0+1;
+      for(let c=c0;c<=c1;c++){const pl=plan[c]?plan[c].a:0,pd=paid[c];sched.push({plan:Math.round(pl*100)/100,paid:pd?Math.round(pd.a*100)/100:'',pc:pd?(pd.pc||cur):cur,rate:pd?pd.rate:''})}}
+    const fp=cols.length&&plan[cols[0]]?plan[cols[0]].a:null;
+    const inside=sched.length&&H>0&&fp!==null&&Math.abs(fp-H)<.5;const down=inside?0:H;
+    const psum=sched.reduce((a,s)=>a+s.plan,0),diff=Math.round((G-down-psum)*100)/100;
+    if(sched.length&&Math.abs(diff)>.5)flags.push('გრაფიკის ჯამი ნაშთს არ ემთხვევა (სხვაობა '+diff+')');
+    let day=cell(r,9)&&typeof cell(r,9).v==='number'?cell(r,9).v:null;
+    if(day===null){day=5;flags.push('გადახდის დღე არ იყო მითითებული, ჩაწერილია 5')}
+    let B=cell(r,2)?cell(r,2).v:null;
+    if(B instanceof Date){const d=new Date(B.getTime()+432e5);B=d.getDate()+'.'+(d.getMonth()+1);flags.push('ხელშეკრულების №-ის ნაცვლად თარიღი იყო ჩაწერილი')}
+    const C=cell(r,3)?cell(r,3).v:null;let ph=cell(r,6)?cell(r,6).v:null;ph=ph==null?'':String(ph).trim().replace(/\s+/g,' ');
+    let note='ხელშ. №'+(B!=null?B:'—')+', '+(C||'—');if(flags.length)note+=' | შესამოწმებელი: '+flags.join('; ');
+    out.push({name:String(nm.v).trim(),floor:'',apt:cell(r,5)&&cell(r,5).v!=null?String(cell(r,5).v).trim():'',phone:ph,email:'',sqm:'',ppsqm:'',total:G,cur,down,term,start,day,sched,note,_flag:flags.length?1:0});
+  }
+  return out}
+
+</script>
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import {getFirestore,collection,onSnapshot,doc,setDoc,deleteDoc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {getFirestore,collection,onSnapshot,doc,setDoc,deleteDoc,writeBatch} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 const app=initializeApp({apiKey:"AIzaSyBNa4B-0hf_a13g3wW2ohK2xGKnOPqLbrY",authDomain:"debitorebi-baza.firebaseapp.com",projectId:"debitorebi-baza",storageBucket:"debitorebi-baza.firebasestorage.app",messagingSenderId:"269292067281",appId:"1:269292067281:web:d2330c15d3328af967a8f0"});
 const auth=getAuth(app),db=getFirestore(app);
 const CUR=['USD','EUR','GEL'],SY={USD:'$',EUR:'€',GEL:'₾'};
@@ -88,7 +136,13 @@ document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset
  if(k){cur[k]=t.type=='number'?(t.value===''?'':+t.value):t.value;if(['sqm','ppsqm','down'].includes(k))fixLast();upd()}
  else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=s=='pc'?t.value:(t.value===''?'':+t.value);if(s=='plan')fixLast();upd()}});
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
- if(tr){open(clients.find(c=>c.id==tr.dataset.id))}
+ if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
+ if(id=='imp')$('#fi').click();
+ else if(id=='clr'){if(!clients.length){alert('ბაზა უკვე ცარიელია');return}
+  if(!confirm(`ყველა ${clients.length} კლიენტი სამუდამოდ წაიშლება. გავაგრძელო?`))return;
+  if(prompt('დასადასტურებლად ჩაწერე სიტყვა: წაშლა')!=='წაშლა'){alert('გაუქმდა, არაფერი წაშლილა');return}
+  try{const L=[...clients];for(let i=0;i<L.length;i+=400){const b=writeBatch(db);L.slice(i,i+400).forEach(c=>b.delete(doc(db,'clients',c.id)));await b.commit()}alert('ბაზა გასუფთავდა')}catch(x){alert('შეცდომა: '+x.message)}}
+ else if(tr){open(clients.find(c=>c.id==tr.dataset.id))}
  else if(id=='new')open();else if(id=='back'){cur=null;go('list')}else if(id=='gen')gen();else if(id=='out')signOut(auth);
  else if(id=='save'){if(!(cur.name||'').trim()){alert('ჩაწერე სახელი გვარი');return}
   const cid=cur.id||doc(collection(db,'clients')).id,{id:_,...d}=cur;
@@ -98,6 +152,12 @@ document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closes
   (c.sched||[]).forEach((x,i)=>B.push({'სახელი გვარი':c.name,'ბინა':c.apt,'თარიღი':k.rows[i].d?dd(k.rows[i].d):'','გეგმა':x.plan,'გადახდილი':x.paid,'გადახდის ვალუტა':x.pc,'კურსი':x.rate,'ხელშ. ვალუტაში':r2(k.rows[i].p)}))});
   const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(A),'კლიენტები');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(B),'გრაფიკები');XLSX.writeFile(wb,'debitorebi_'+new Date().toISOString().slice(0,10)+'.xlsx')}});
 $('#q').oninput=renderList;
+$('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;
+ try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array',cellDates:true}),arr=convertSheet(XLSX,wb.Sheets[wb.SheetNames[0]]);
+  if(!arr.length){alert('ფაილში კლიენტები ვერ ვიპოვე');return}
+  if(!confirm(`ნაპოვნია ${arr.length} კლიენტი (${arr.filter(c=>c._flag).length}-ს აქვს შენიშვნა შესამოწმებელი).`+(clients.length?`\n\nბაზაში უკვე ${clients.length} კლიენტია, დუბლიკატები გაჩნდება! ჯერ გაასუფთავე ბაზა.`:'')+'\n\nჩავტვირთო?'))return;
+  for(let i=0;i<arr.length;i+=400){const b=writeBatch(db);arr.slice(i,i+400).forEach(c=>{const {_flag,...d}=c;b.set(doc(collection(db,'clients')),{...d,updatedBy:auth.currentUser.email,updatedAt:Date.now()})});await b.commit()}
+  alert('ჩაიტვირთა '+arr.length+' კლიენტი')}catch(x){alert('შეცდომა: '+x.message)}};
 $('#lf').onsubmit=async e=>{e.preventDefault();$('#err').textContent='';try{await signInWithEmailAndPassword(auth,$('#em').value.trim(),$('#pw').value)}catch(x){$('#err').textContent='არასწორი ელფოსტა ან პაროლი'}};
 onAuthStateChanged(auth,u=>{unsub&&unsub();unsub=null;if(!u){$('#me').textContent='';cur=null;return go('login')}
  $('#me').textContent=u.email;go('list');
