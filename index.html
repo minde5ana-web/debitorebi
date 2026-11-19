@@ -128,13 +128,22 @@ function detail(){go('detail');
 <div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი (თანხა)','number')}${f('dpct','ან პირველადი შენატანი (%)','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}${f('note','შენიშვნა')}</div>
 <p><button class="g" id="gen">გრაფიკის გენერირება</button> <span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
 <div class="card" id="sum"></div>
-<div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>გადახდის თარიღი</th><th>ვალუტა</th><th>კურსი</th><th>ხელშ. ვალუტაში</th><th>სტატუსი</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
-<p class="mu">პირველი თვის გეგმაში თანხის ჩაწერისას ყველა შუა თვე იგივე თანხით შეივსება, ბოლო თვე კი დანაკლისს ავტომატურად გადაითვლის.</p><p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
+<div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>გადახდის თარიღი</th><th>ვალუტა</th><th>კურსი (ეროვნული ბანკი)</th><th>ხელშ. ვალუტაში</th><th>სტატუსი</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
+<p class="red" id="rmsg"></p><p class="mu">პირველი თვის გეგმაში თანხის ჩაწერისას ყველა შუა თვე იგივე თანხით შეივსება, ბოლო თვე კი დანაკლისს ავტომატურად გადაითვლის.</p><p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
 function upd(){const k=calc(cur),c=cur.cur;$('#tot').textContent=fm(k.total,c);
  $('#sum').innerHTML=`<div class="grid"><div><label>პირველადი შენატანი</label>${fm(k.down,c)}</div><div><label>სულ მიღებული</label><b class="grn">${fm(k.rec,c)}</b></div><div><label>დარჩენილი გადასახდელი</label><b>${fm(k.rem,c)}</b></div><div><label>ვადაგადაცილებული</label><b class="${k.ov>0?'red':''}">${fm(k.ov,c)}${k.days?` (${k.days} დღე)`:''}</b></div></div>${cur.sched.length&&Math.abs(k.sum-(k.total-k.down))>.01?`<p class="red">გრაფიკის ჯამი (${fm(k.sum,c)}) არ ემთხვევა ნაშთს (${fm(k.total-k.down,c)}). დააჭირე „გრაფიკის გენერირებას“.</p>`:''}${cur.sched.length>1&&cur.sched[cur.sched.length-1].plan<-.005?'<p class="red">ბოლო თვის გადახდა უარყოფითია: თვიური თანხა ზედმეტად დიდია.</p>':''}`;
  document.querySelectorAll('#rows tr').forEach((tr,i)=>{const x=cur.sched[i],r=k.rows[i],rt=tr.querySelector('.rt');tr.className=r.st;tr.querySelector('.sx').textContent=r.tx;tr.querySelector('.dt').textContent=r.d?dd(r.d):'—';
   const pi=tr.querySelector('[data-s=plan]');if(document.activeElement!==pi)pi.value=x.plan;
-  rt.placeholder=rl(x.pc,c);rt.disabled=x.pc==c;tr.querySelector('.cv').textContent=x.paid!==''?fm(r.p,c):''})}
+  rt.placeholder=rl(x.pc,c);rt.disabled=x.pc==c;if(document.activeElement!==rt)rt.value=x.rate??'';tr.querySelector('.cv').textContent=x.paid!==''?fm(r.p,c):''})}
+const RC={},r4=n=>Math.round(n*1e4)/1e4;
+const nbg=(code,d)=>RC[code+d]??=fetch(`https://nbg.gov.ge/gw/api/ct/monetarypolicy/currencies/en/json/?currencies=${code}&date=${d}`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{const c=j[0].currencies[0];return c.rate/(c.quantity||1)});
+async function autoRate(i){const S=cur.sched,x=S[i],c=cur.cur,m=document.getElementById('rmsg');
+ if(x.pc==c){x.rate='';upd();return}
+ if(!x.pdate||x.pdate>new Date().toISOString().slice(0,10))return;
+ try{const g=code=>code=='GEL'?Promise.resolve(1):nbg(code,x.pdate);const [a,b]=await Promise.all([g(x.pc),g(c)]);
+  if(!cur||cur.sched!==S||S[i]!==x)return;
+  x.rate=r4(x.pc=='GEL'?b:c=='GEL'?a:a/b);if(m)m.textContent='';upd()}
+ catch(e){delete RC[x.pc+x.pdate];delete RC[c+x.pdate];if(m)m.textContent='კურსი ეროვნული ბანკიდან ვერ ჩაიტვირთა, ჩაწერე ხელით.'}}
 function gen(){const n=Math.max(1,Math.round(+cur.term)||0),t=r2(tot(cur)-(+cur.down||0)),b=Math.floor(t/n*100)/100,o=cur.sched;
  cur.sched=Array.from({length:n},(_,i)=>({plan:i<n-1?b:r2(t-b*(n-1)),paid:o[i]?.paid??'',pc:o[i]?.pc||cur.cur,rate:o[i]?.rate??'',pdate:o[i]?.pdate??''}));$('#rows').innerHTML=rowsHtml();upd()}
 function fixLast(){const s=cur.sched,n=s.length;if(n>1)s[n-1].plan=r2(tot(cur)-(+cur.down||0)-s.slice(0,n-1).reduce((a,x)=>a+(+x.plan||0),0))}
@@ -144,7 +153,7 @@ document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset
   else if(k=='down'){cur.dpct='';dp().value=''}
   else if(['sqm','ppsqm'].includes(k)&&cur.dpct!==''&&cur.dpct!=null){cur.down=r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
   if(['sqm','ppsqm','down','dpct'].includes(k))fixLast();upd()}
- else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan'){if(i==0&&cur.sched.length>2){const v=+cur.sched[0].plan||0;for(let j=1;j<cur.sched.length-1;j++)cur.sched[j].plan=v}fixLast()}upd()}});
+ else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan'){if(i==0&&cur.sched.length>2){const v=+cur.sched[0].plan||0;for(let j=1;j<cur.sched.length-1;j++)cur.sched[j].plan=v}fixLast()}upd();if(s=='pdate'||s=='pc'||(s=='paid'&&cur.sched[i].rate===''))autoRate(i)}});
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
  if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
  if(id=='imp')$('#fi').click();
