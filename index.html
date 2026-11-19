@@ -129,11 +129,11 @@ function detail(){go('detail');
 <p><button class="g" id="gen">გრაფიკის გენერირება</button> <span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
 <div class="card" id="sum"></div>
 <div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>გადახდის თარიღი</th><th>ვალუტა</th><th>კურსი</th><th>ხელშ. ვალუტაში</th><th>სტატუსი</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
-<p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
+<p class="mu">პირველი თვის გეგმაში თანხის ჩაწერისას ყველა შუა თვე იგივე თანხით შეივსება, ბოლო თვე კი დანაკლისს ავტომატურად გადაითვლის.</p><p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
 function upd(){const k=calc(cur),c=cur.cur;$('#tot').textContent=fm(k.total,c);
- $('#sum').innerHTML=`<div class="grid"><div><label>პირველადი შენატანი</label>${fm(k.down,c)}</div><div><label>სულ მიღებული</label><b class="grn">${fm(k.rec,c)}</b></div><div><label>დარჩენილი გადასახდელი</label><b>${fm(k.rem,c)}</b></div><div><label>ვადაგადაცილებული</label><b class="${k.ov>0?'red':''}">${fm(k.ov,c)}${k.days?` (${k.days} დღე)`:''}</b></div></div>${cur.sched.length&&Math.abs(k.sum-(k.total-k.down))>.01?`<p class="red">გრაფიკის ჯამი (${fm(k.sum,c)}) არ ემთხვევა ნაშთს (${fm(k.total-k.down,c)}). დააჭირე „გრაფიკის გენერირებას“.</p>`:''}`;
+ $('#sum').innerHTML=`<div class="grid"><div><label>პირველადი შენატანი</label>${fm(k.down,c)}</div><div><label>სულ მიღებული</label><b class="grn">${fm(k.rec,c)}</b></div><div><label>დარჩენილი გადასახდელი</label><b>${fm(k.rem,c)}</b></div><div><label>ვადაგადაცილებული</label><b class="${k.ov>0?'red':''}">${fm(k.ov,c)}${k.days?` (${k.days} დღე)`:''}</b></div></div>${cur.sched.length&&Math.abs(k.sum-(k.total-k.down))>.01?`<p class="red">გრაფიკის ჯამი (${fm(k.sum,c)}) არ ემთხვევა ნაშთს (${fm(k.total-k.down,c)}). დააჭირე „გრაფიკის გენერირებას“.</p>`:''}${cur.sched.length>1&&cur.sched[cur.sched.length-1].plan<-.005?'<p class="red">ბოლო თვის გადახდა უარყოფითია: თვიური თანხა ზედმეტად დიდია.</p>':''}`;
  document.querySelectorAll('#rows tr').forEach((tr,i)=>{const x=cur.sched[i],r=k.rows[i],rt=tr.querySelector('.rt');tr.className=r.st;tr.querySelector('.sx').textContent=r.tx;tr.querySelector('.dt').textContent=r.d?dd(r.d):'—';
-  if(i==cur.sched.length-1&&i>0)tr.querySelector('[data-s=plan]').value=x.plan;
+  const pi=tr.querySelector('[data-s=plan]');if(document.activeElement!==pi)pi.value=x.plan;
   rt.placeholder=rl(x.pc,c);rt.disabled=x.pc==c;tr.querySelector('.cv').textContent=x.paid!==''?fm(r.p,c):''})}
 function gen(){const n=Math.max(1,Math.round(+cur.term)||0),t=r2(tot(cur)-(+cur.down||0)),b=Math.floor(t/n*100)/100,o=cur.sched;
  cur.sched=Array.from({length:n},(_,i)=>({plan:i<n-1?b:r2(t-b*(n-1)),paid:o[i]?.paid??'',pc:o[i]?.pc||cur.cur,rate:o[i]?.rate??'',pdate:o[i]?.pdate??''}));$('#rows').innerHTML=rowsHtml();upd()}
@@ -144,7 +144,7 @@ document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset
   else if(k=='down'){cur.dpct='';dp().value=''}
   else if(['sqm','ppsqm'].includes(k)&&cur.dpct!==''&&cur.dpct!=null){cur.down=r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
   if(['sqm','ppsqm','down','dpct'].includes(k))fixLast();upd()}
- else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan')fixLast();upd()}});
+ else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan'){if(i==0&&cur.sched.length>2){const v=+cur.sched[0].plan||0;for(let j=1;j<cur.sched.length-1;j++)cur.sched[j].plan=v}fixLast()}upd()}});
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
  if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
  if(id=='imp')$('#fi').click();
