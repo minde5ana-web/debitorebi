@@ -17,7 +17,7 @@ input:disabled{background:#eef0f3}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
 label{font-size:12px;color:#6b7280;display:block}
 table{border-collapse:collapse;width:100%}th,td{padding:7px 8px;border-bottom:1px solid #eee;text-align:left}th{font-size:12px;color:#6b7280}
-tr.c{cursor:pointer}tr.c:hover{background:#f3f4f6}.wrap{overflow-x:auto}
+tr.c{cursor:pointer}tr.c:hover{background:#f3f4f6}.lt{background:#fdebd9}input[type=date]{min-width:135px}.wrap{overflow-x:auto}
 .ok{background:#e8f5ee}.part{background:#fdf3dc}.late{background:#fbe6e3}.wait{background:#f3f4f6}
 td input,td select{min-width:85px;padding:5px}
 .bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.bar input{flex:1;min-width:180px;width:auto}
@@ -101,7 +101,13 @@ const due=(c,i)=>{const [y,m]=(c.start||'').split('-').map(Number);if(!y)return 
 const tot=c=>(+c.sqm&&+c.ppsqm)?r2(c.sqm*c.ppsqm):r2(+c.total||0);
 function calc(c){const s=c.sched||[],T=today(),total=tot(c),down=+c.down||0;let paid=0,req=down,cum=down;const cp=[],rows=[];
  s.forEach((x,i)=>{const p=conv(x.paid,x.pc,c.cur,x.rate),d=due(c,i),late=d&&d<=T,pl=+x.plan||0;paid+=p;cum+=pl;cp.push(cum);if(late)req+=pl;
-  rows.push({p,d,st:late?(p>=pl-.005?'ok':p>0?'part':'late'):(p>0?(p>=pl-.005?'ok':'part'):'wait')})});
+  const pdt=x.pdate?new Date(x.pdate+'T00:00:00'):null,dl=pdt&&d&&pdt>d?Math.round((pdt-d)/864e5):0;let st,tx;
+  if(pl<=.005&&p<=0){st='wait';tx=''}
+  else if(p>=pl-.005){st=dl?'lt':'ok';tx=dl?`გადაიხადა ${dl} დღით გვიან`:(pdt?'გადახდილია დროულად':'გადახდილია')}
+  else if(p>0){st='part';tx=`დააკლო ${fm(pl-p,c.cur)}`+(dl?`, გადაიხადა ${dl} დღით გვიან`:'')+(late?' · ვადა გასულია':'')}
+  else if(late){st='late';tx=`ვადაგადაცილებულია ${Math.round((T-d)/864e5)} დღით`}
+  else{st='wait';tx='ჯერ არ დამდგარა'}
+  rows.push({p,d,st,tx})});
  const rec=down+paid,ov=Math.max(0,r2(req-rec));let days=0;
  if(ov>0){const k=cp.findIndex((v,i)=>v>rec+.005&&rows[i].d&&rows[i].d<=T);if(k>=0)days=Math.round((T-rows[k].d)/864e5)}
  return{total,down,rec,rem:r2(total-rec),ov,days,rows,sum:r2(s.reduce((a,y)=>a+(+y.plan||0),0))}}
@@ -115,26 +121,30 @@ function renderList(){
   const st=k.ov>0?`<span class="red">● დაგვიანება${k.days?' '+k.days+' დღე':''} · ${fm(k.ov,c.cur)}</span>`:(k.total>0&&k.rem<=.005?'<span class="grn">გადახდილია</span>':'<span class="grn">რიგზეა</span>');
   return`<tr class="c" data-id="${c.id}"><td>${c.name||''}</td><td>${c.floor||''}</td><td>${c.apt||''}</td><td>${st}</td><td>${fm(k.rem,c.cur)}</td></tr>`}).join('')}
 function open(c){cur=c?structuredClone(c):{name:'',floor:'',apt:'',phone:'',email:'',sqm:'',ppsqm:'',cur:'USD',down:'',term:24,start:new Date().toISOString().slice(0,7),day:5,sched:[]};cur.sched=cur.sched||[];detail()}
-const rowsHtml=()=>cur.sched.map((x,i)=>`<tr data-i="${i}"><td>${i+1}</td><td class="dt"></td><td><input type="number" step="any" data-s="plan" value="${x.plan}" ${i==cur.sched.length-1&&i>0?'disabled':''}></td><td><input type="number" step="any" data-s="paid" value="${x.paid}"></td><td><select data-s="pc">${CUR.map(c=>`<option ${c==x.pc?'selected':''}>${c}</option>`).join('')}</select></td><td><input type="number" step="any" data-s="rate" value="${x.rate}" class="rt"></td><td class="cv"></td></tr>`).join('');
+const rowsHtml=()=>cur.sched.map((x,i)=>`<tr data-i="${i}"><td>${i+1}</td><td class="dt"></td><td><input type="number" step="any" data-s="plan" value="${x.plan}" ${i==cur.sched.length-1&&i>0?'disabled':''}></td><td><input type="number" step="any" data-s="paid" value="${x.paid}"></td><td><input type="date" data-s="pdate" value="${x.pdate||''}"></td><td><select data-s="pc">${CUR.map(c=>`<option ${c==x.pc?'selected':''}>${c}</option>`).join('')}</select></td><td><input type="number" step="any" data-s="rate" value="${x.rate}" class="rt"></td><td class="cv"></td><td class="sx"></td></tr>`).join('');
 function detail(){go('detail');
  const f=(k,l,t='text')=>`<div><label>${l}</label><input data-k="${k}" type="${t}" ${t=='number'?'step="any"':''} value="${cur[k]??''}"></div>`;
  $('#detail').innerHTML=`<div class="bar"><button class="g" id="back">← სიაში</button><button id="save">შენახვა</button>${cur.id?'<button class="d" id="del">წაშლა</button>':''}</div>
-<div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}${f('note','შენიშვნა')}</div>
+<div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი (თანხა)','number')}${f('dpct','ან პირველადი შენატანი (%)','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}${f('note','შენიშვნა')}</div>
 <p><button class="g" id="gen">გრაფიკის გენერირება</button> <span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
 <div class="card" id="sum"></div>
-<div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>ვალუტა</th><th>კურსი</th><th>ხელშ. ვალუტაში</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
-<p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
+<div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>გადახდის თარიღი</th><th>ვალუტა</th><th>კურსი</th><th>ხელშ. ვალუტაში</th><th>სტატუსი</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
+<p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
 function upd(){const k=calc(cur),c=cur.cur;$('#tot').textContent=fm(k.total,c);
  $('#sum').innerHTML=`<div class="grid"><div><label>პირველადი შენატანი</label>${fm(k.down,c)}</div><div><label>სულ მიღებული</label><b class="grn">${fm(k.rec,c)}</b></div><div><label>დარჩენილი გადასახდელი</label><b>${fm(k.rem,c)}</b></div><div><label>ვადაგადაცილებული</label><b class="${k.ov>0?'red':''}">${fm(k.ov,c)}${k.days?` (${k.days} დღე)`:''}</b></div></div>${cur.sched.length&&Math.abs(k.sum-(k.total-k.down))>.01?`<p class="red">გრაფიკის ჯამი (${fm(k.sum,c)}) არ ემთხვევა ნაშთს (${fm(k.total-k.down,c)}). დააჭირე „გრაფიკის გენერირებას“.</p>`:''}`;
- document.querySelectorAll('#rows tr').forEach((tr,i)=>{const x=cur.sched[i],r=k.rows[i],rt=tr.querySelector('.rt');tr.className=r.st;tr.querySelector('.dt').textContent=r.d?dd(r.d):'—';
+ document.querySelectorAll('#rows tr').forEach((tr,i)=>{const x=cur.sched[i],r=k.rows[i],rt=tr.querySelector('.rt');tr.className=r.st;tr.querySelector('.sx').textContent=r.tx;tr.querySelector('.dt').textContent=r.d?dd(r.d):'—';
   if(i==cur.sched.length-1&&i>0)tr.querySelector('[data-s=plan]').value=x.plan;
   rt.placeholder=rl(x.pc,c);rt.disabled=x.pc==c;tr.querySelector('.cv').textContent=x.paid!==''?fm(r.p,c):''})}
 function gen(){const n=Math.max(1,Math.round(+cur.term)||0),t=r2(tot(cur)-(+cur.down||0)),b=Math.floor(t/n*100)/100,o=cur.sched;
- cur.sched=Array.from({length:n},(_,i)=>({plan:i<n-1?b:r2(t-b*(n-1)),paid:o[i]?.paid??'',pc:o[i]?.pc||cur.cur,rate:o[i]?.rate??''}));$('#rows').innerHTML=rowsHtml();upd()}
+ cur.sched=Array.from({length:n},(_,i)=>({plan:i<n-1?b:r2(t-b*(n-1)),paid:o[i]?.paid??'',pc:o[i]?.pc||cur.cur,rate:o[i]?.rate??'',pdate:o[i]?.pdate??''}));$('#rows').innerHTML=rowsHtml();upd()}
 function fixLast(){const s=cur.sched,n=s.length;if(n>1)s[n-1].plan=r2(tot(cur)-(+cur.down||0)-s.slice(0,n-1).reduce((a,x)=>a+(+x.plan||0),0))}
 document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset.s;if(!cur||$('#detail').classList.contains('hidden'))return;
- if(k){cur[k]=t.type=='number'?(t.value===''?'':+t.value):t.value;if(['sqm','ppsqm','down'].includes(k))fixLast();upd()}
- else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=s=='pc'?t.value:(t.value===''?'':+t.value);if(s=='plan')fixLast();upd()}});
+ if(k){cur[k]=t.type=='number'?(t.value===''?'':+t.value):t.value;const dn=()=>document.querySelector('[data-k=down]'),dp=()=>document.querySelector('[data-k=dpct]');
+  if(k=='dpct'){cur.down=cur.dpct===''?'':r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
+  else if(k=='down'){cur.dpct='';dp().value=''}
+  else if(['sqm','ppsqm'].includes(k)&&cur.dpct!==''&&cur.dpct!=null){cur.down=r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
+  if(['sqm','ppsqm','down','dpct'].includes(k))fixLast();upd()}
+ else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan')fixLast();upd()}});
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
  if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
  if(id=='imp')$('#fi').click();
@@ -149,7 +159,7 @@ document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closes
   try{await setDoc(doc(db,'clients',cid),{...d,total:tot(cur),updatedBy:auth.currentUser.email,updatedAt:Date.now()});cur=null;go('list')}catch(x){alert('ვერ შეინახა: '+x.message)}}
  else if(id=='del'&&confirm('ნამდვილად წავშალო ეს კლიენტი?')){try{await deleteDoc(doc(db,'clients',cur.id));cur=null;go('list')}catch(x){alert('ვერ წაიშალა: '+x.message)}}
  else if(id=='exp'){const A=[],B=[];clients.forEach(c=>{const k=calc(c);A.push({'სახელი გვარი':c.name,'სართული':c.floor,'ბინა':c.apt,'ტელეფონი':c.phone,'ელფოსტა':c.email,'კვმ':c.sqm,'ფასი კვმ':c.ppsqm,'ვალუტა':c.cur,'ჯამი':k.total,'პირველადი შენატანი':k.down,'სულ მიღებული':k.rec,'დარჩენილი':k.rem,'ვადაგადაცილებული':k.ov,'გადახდის დღე':c.day});
-  (c.sched||[]).forEach((x,i)=>B.push({'სახელი გვარი':c.name,'ბინა':c.apt,'თარიღი':k.rows[i].d?dd(k.rows[i].d):'','გეგმა':x.plan,'გადახდილი':x.paid,'გადახდის ვალუტა':x.pc,'კურსი':x.rate,'ხელშ. ვალუტაში':r2(k.rows[i].p)}))});
+  (c.sched||[]).forEach((x,i)=>B.push({'სახელი გვარი':c.name,'ბინა':c.apt,'თარიღი':k.rows[i].d?dd(k.rows[i].d):'','გეგმა':x.plan,'გადახდილი':x.paid,'გადახდის თარიღი':x.pdate||'','სტატუსი':k.rows[i].tx,'გადახდის ვალუტა':x.pc,'კურსი':x.rate,'ხელშ. ვალუტაში':r2(k.rows[i].p)}))});
   const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(A),'კლიენტები');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(B),'გრაფიკები');XLSX.writeFile(wb,'debitorebi_'+new Date().toISOString().slice(0,10)+'.xlsx')}});
 $('#q').oninput=renderList;
 $('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;
