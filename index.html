@@ -22,7 +22,7 @@ tr.c{cursor:pointer}tr.c:hover{background:#f3f4f6}.lt{background:#fdebd9}input[t
 td input,td select{min-width:85px;padding:5px}
 .bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.bar input{flex:1;min-width:180px;width:auto}
 .hidden{display:none}#login{max-width:340px;margin:60px auto}#login input{margin:6px 0}
-</style></head><body>
+.tg{padding:2px 8px;border-radius:10px;font-size:12px}.tg.f{background:#e8f5ee;color:#2e7d4f}.tg.r{background:#e6eef9;color:#2f4b6e}.tg.b{background:#f1e8f7;color:#6b3f8a}.fl td{background:#eef1f5;font-size:13px}</style></head><body>
 <header><b>დებიტორების ბაზა</b><span id="me"></span></header>
 <main>
 <div id="login" class="card hidden"><h3>შესვლა</h3>
@@ -30,8 +30,8 @@ td input,td select{min-width:85px;padding:5px}
 <button style="width:100%;margin-top:6px">შესვლა</button><p id="err" class="red"></p></form></div>
 <div id="list" class="hidden">
 <div class="cards" id="sums"></div>
-<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, ტელეფონი"><button id="new">+ ახალი კლიენტი</button><div style="position:relative"><button class="g" id="mn">მენიუ ▾</button><div id="mm" class="card hidden" style="position:absolute;right:0;top:42px;z-index:5;width:250px;padding:6px"><button class="g adm hidden" id="usr" style="width:100%;margin:3px 0">მომხმარებლები</button><button class="g" id="exp" style="width:100%;margin:3px 0">Excel-ში გადმოწერა</button><button class="g adm hidden" id="imp" style="width:100%;margin:3px 0">იმპორტი ექსელიდან</button><button class="d adm hidden" id="clr" style="width:100%;margin:3px 0">ბაზის სრული გასუფთავება</button><button class="g" id="out" style="width:100%;margin:3px 0">გასვლა</button></div></div><input type="file" id="fi" accept=".xlsx,.xls" class="hidden"></div>
-<div class="card wrap"><table><thead><tr><th>სახელი გვარი</th><th>სართული</th><th>ბინა</th><th>სტატუსი</th><th>დარჩენილი</th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, სართული, ტელეფონი"><select id="sf" style="width:auto"><option value="all">ყველა</option><option value="sold">გაყიდული</option><option value="free">გასაყიდი</option><option value="res">დაჯავშნილი</option><option value="barter">ბარტერი</option></select><button id="new">+ ახალი კლიენტი / ბინა</button><div style="position:relative"><button class="g" id="mn">მენიუ ▾</button><div id="mm" class="card hidden" style="position:absolute;right:0;top:42px;z-index:5;width:250px;padding:6px"><button class="g adm hidden" id="usr" style="width:100%;margin:3px 0">მომხმარებლები</button><button class="g adm hidden" id="flr" style="width:100%;margin:3px 0">სართულების შევსება ბინის ნომრიდან</button><button class="g ex hidden" id="exp" style="width:100%;margin:3px 0">Excel-ში გადმოწერა</button><button class="g adm hidden" id="imp" style="width:100%;margin:3px 0">იმპორტი ექსელიდან</button><button class="d adm hidden" id="clr" style="width:100%;margin:3px 0">ბაზის სრული გასუფთავება</button><button class="g" id="out" style="width:100%;margin:3px 0">გასვლა</button></div></div><input type="file" id="fi" accept=".xlsx,.xls" class="hidden"></div>
+<div class="card wrap"><table><thead><tr><th>სახელი გვარი</th><th>სართული</th><th>ბინა</th><th>სტატუსი</th><th>დარჩენილი / ფასი</th></tr></thead><tbody id="tb"></tbody></table></div>
 </div>
 <div id="detail" class="hidden"></div>
 <div id="users" class="hidden"></div>
@@ -99,7 +99,7 @@ const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
 const conv=(a,p,c,r)=>{a=+a||0;r=+r||0;if(!a||p==c)return a;if(!r)return 0;return c=='GEL'?a*r:p=='GEL'?a/r:a*r};
 const rl=(p,c)=>p==c?'':c=='GEL'?`1 ${p} = ? ₾`:p=='GEL'?`1 ${c} = ? ₾`:`1 ${p} = ? ${c}`;
 const due=(c,i)=>{const [y,m]=(c.start||'').split('-').map(Number);if(!y)return null;const dim=new Date(y,m+i,0).getDate();return new Date(y,m-1+i,Math.min(+c.day||1,dim))};
-const tot=c=>(+c.sqm&&+c.ppsqm)?r2(c.sqm*c.ppsqm):r2(+c.total||0);
+const tot=c=>c.status=='barter'?0:(+c.sqm&&+c.ppsqm)?r2(c.sqm*c.ppsqm):r2(+c.total||0);
 function calc(c){const s=c.sched||[],T=today(),total=tot(c),down=+c.down||0;let paid=0,req=down,cum=down;const cp=[],rows=[];
  s.forEach((x,i)=>{const p=conv(x.paid,x.pc,c.cur,x.rate),d=due(c,i),late=d&&d<=T,pl=+x.plan||0;paid+=p;cum+=pl;cp.push(cum);if(late)req+=pl;
   const pdt=x.pdate?new Date(x.pdate+'T00:00:00'):null,dl=pdt&&d&&pdt>d?Math.round((pdt-d)/864e5):0;let st,tx;
@@ -112,29 +112,45 @@ function calc(c){const s=c.sched||[],T=today(),total=tot(c),down=+c.down||0;let 
  const rec=down+paid,ov=Math.max(0,r2(req-rec));let days=0;
  if(ov>0){const k=cp.findIndex((v,i)=>v>rec+.005&&rows[i].d&&rows[i].d<=T);if(k>=0)days=Math.round((T-rows[k].d)/864e5)}
  return{total,down,rec,rem:r2(total-rec),ov,days,rows,sum:r2(s.reduce((a,y)=>a+(+y.plan||0),0))}}
-let cur=null,clients=[],unsub=null,admin=false,seeTot=false,uunsub=null,UL=[];
+let cur=null,clients=[],unsub=null,admin=false,P={},uunsub=null,UL=[];
+const can=k=>admin||!!P[k],isS=c=>!c.status||c.status=='sold',ST={sold:'გაყიდული',free:'გასაყიდი',res:'დაჯავშნილი',barter:'ბარტერი'};
 const go=v=>{['login','list','detail','users'].forEach(x=>$('#'+x).classList.toggle('hidden',x!=v))};
 function renderList(){
- const S={};clients.forEach(c=>{const k=calc(c),s=S[c.cur]??={rec:0,rem:0,ov:0,n:0,late:0};s.rec+=k.rec;s.rem+=k.rem;s.ov+=k.ov;s.n++;if(k.ov>0)s.late++});
- const FULL=admin||seeTot;$('#sums').innerHTML=(clients.length?`<div class="card"><h3>სულ</h3><div class="k"><span>კლიენტების რაოდენობა</span><b>${clients.length}</b></div><div class="k"><span>მოვალე კლიენტი (ვადაგადაცილებული)</span><b class="red">${Object.values(S).reduce((a,x)=>a+x.late,0)}</b></div></div>`:'')+(FULL?CUR.filter(c=>S[c]).map(c=>`<div class="card"><h3>${c} · ${S[c].n} კლიენტი</h3><div class="k"><span>სულ მიღებული</span><b class="grn">${fm(S[c].rec,c)}</b></div><div class="k"><span>სულ მისაღები (დარჩენილი)</span><b>${fm(S[c].rem,c)}</b></div><div class="k"><span>ვადაგადაცილებული</span><b class="red">${fm(S[c].ov,c)}</b></div><div class="k"><span>მოვალე კლიენტი</span><b>${S[c].late}</b></div></div>`).join(''):'')||'<p class="mu">ჯერ კლიენტი არ არის</p>';
- const q=$('#q').value.toLowerCase();
- $('#tb').innerHTML=clients.filter(c=>[c.name,c.apt,c.phone].join(' ').toLowerCase().includes(q)).sort((a,b)=>(a.name||'').localeCompare(b.name||'','ka')).map(c=>{const k=calc(c);
-  const st=k.ov>0?`<span class="red">● დაგვიანება${k.days?' '+k.days+' დღე':''} · ${fm(k.ov,c.cur)}</span>`:(k.total>0&&k.rem<=.005?'<span class="grn">გადახდილია</span>':'<span class="grn">რიგზეა</span>');
-  return`<tr class="c" data-id="${c.id}"><td>${c.name||''}</td><td>${c.floor||''}</td><td>${c.apt||''}</td><td>${st}</td><td>${fm(k.rem,c.cur)}</td></tr>`}).join('')}
-function applyRole(){document.querySelectorAll('.adm').forEach(e=>e.classList.toggle('hidden',!admin));renderList()}
+ const S={},F={};let nf=0,nr=0,nb=0;
+ clients.forEach(c=>{if(isS(c)){const k=calc(c),s=S[c.cur]??={rec:0,rem:0,ov:0,n:0,late:0};s.rec+=k.rec;s.rem+=k.rem;s.ov+=k.ov;s.n++;if(k.ov>0)s.late++}
+  else if(c.status=='barter')nb++;else{const f=F[c.cur]??={fn:0,fs:0,rn:0,rs:0};if(c.status=='free'){f.fn++;f.fs+=tot(c);nf++}else{f.rn++;f.rs+=tot(c);nr++}}});
+ const card=(h,rows)=>`<div class="card"><h3>${h}</h3>${rows.map(r=>`<div class="k"><span>${r[0]}</span><b class="${r[2]||''}">${r[1]}</b></div>`).join('')}</div>`;
+ let h=clients.length?card('სულ',[['კლიენტების რაოდენობა (გაყიდული ბინა)',clients.filter(isS).length],['გასაყიდი ბინა',nf],['დაჯავშნილი ბინა',nr],['ბარტერი ბინა',nb],['მოვალე კლიენტი (ვადაგადაცილებული)',Object.values(S).reduce((a,x)=>a+x.late,0),'red']]):'';
+ if(can('tot'))h+=CUR.filter(c=>S[c]).map(c=>card(`${c} · ${S[c].n} კლიენტი`,[['სულ მიღებული',fm(S[c].rec,c),'grn'],['სულ მისაღები (დარჩენილი)',fm(S[c].rem,c)],['ვადაგადაცილებული',fm(S[c].ov,c),'red'],['მოვალე კლიენტი',S[c].late]])).join('');
+ if(can('fc'))h+=CUR.filter(c=>F[c]).map(c=>card(`${c} · გაუყიდავი ბინები`,[[`გასაყიდი (${F[c].fn} ბინა)`,fm(F[c].fs,c)],[`დაჯავშნილი (${F[c].rn} ბინა)`,fm(F[c].rs,c)],['სულ პოტენციური',fm(F[c].fs+F[c].rs,c),'grn']])).join('');
+ $('#sums').innerHTML=h||'<p class="mu">ჯერ კლიენტი არ არის</p>';
+ const q=$('#q').value.toLowerCase(),fl=$('#sf').value,nm=v=>{const n=parseFloat(v);return isNaN(n)?1e9:n},fk=c=>c.floor===''||c.floor==null?'—':String(c.floor),sk=c=>c.status||'sold';
+ const L=clients.filter(c=>(fl=='all'||sk(c)==fl)&&[c.name,c.apt,c.phone,c.floor].join(' ').toLowerCase().includes(q))
+  .sort((a,b)=>nm(a.floor)-nm(b.floor)||fk(a).localeCompare(fk(b),'ka',{numeric:true})||String(a.apt||'').localeCompare(String(b.apt||''),'ka',{numeric:true})||(a.name||'').localeCompare(b.name||'','ka'));
+ let out='',last=null;
+ L.forEach(c=>{const f=fk(c);
+  if(f!==last){last=f;const g=L.filter(x=>fk(x)==f),cn=t=>g.filter(x=>sk(x)==t).length;out+=`<tr class="fl"><td colspan="5"><b>${f=='—'?'სართული მითითებული არ არის':'სართული '+f}</b> · ${g.length} ბინა · გაყიდული ${cn('sold')} · გასაყიდი ${cn('free')} · დაჯავშნილი ${cn('res')} · ბარტერი ${cn('barter')}</td></tr>`}
+  const s1=isS(c),k=calc(c);
+  const name=s1?(c.name||''):((c.status=='res'||c.status=='barter')?(c.name||''):'<span class="mu">გასაყიდი ბინა</span>');
+  const st=!s1?`<span class="tg ${c.status=='res'?'r':c.status=='barter'?'b':'f'}">${ST[c.status]}</span>`:(k.ov>0?`<span class="red">● დაგვიანება${k.days?' '+k.days+' დღე':''} · ${fm(k.ov,c.cur)}</span>`:(k.total>0&&k.rem<=.005?'<span class="grn">გადახდილია</span>':'<span class="grn">რიგზეა</span>'));
+  out+=`<tr class="c" data-id="${c.id}"><td>${name}</td><td>${c.floor||''}</td><td>${c.apt||''}</td><td>${st}</td><td>${s1?fm(k.rem,c.cur):(c.status=='barter'?'<span class="mu">ბარტერი · 0</span>':'<span class="mu">'+fm(tot(c),c.cur)+' (ფასი)</span>')}</td></tr>`});
+ $('#tb').innerHTML=out}
+function applyRole(){document.querySelectorAll('.adm').forEach(e=>e.classList.toggle('hidden',!admin));document.querySelectorAll('.ex').forEach(e=>e.classList.toggle('hidden',!can('exp')));renderList()}
+const PERM=[['canSeeTotals','ჯამური თანხები'],['canSeeForecast','გასაყიდი/დაჯავშნილი ბინების თანხა'],['canExport','Excel-ის გადმოწერა'],['canDelete','კლიენტის წაშლა']];
 function usersView(){go('users');const me=(auth.currentUser?.email||'').toLowerCase(),L=UL.filter(u=>u.id!=me);
- $('#users').innerHTML=`<div class="bar"><button class="g" id="ub">← სიაში</button></div><div class="card wrap"><h3>მომხმარებლები</h3><table><thead><tr><th>ელფოსტა</th><th>ჯამური თანხების ხილვა</th></tr></thead><tbody>${L.map(u=>`<tr><td>${u.id}</td><td><input type="checkbox" data-u="${u.id}" ${u.canSeeTotals?'checked':''} style="width:auto"></td></tr>`).join('')||'<tr><td colspan="2" class="mu">ჯერ არავის უშესია</td></tr>'}</tbody></table><p class="mu">ახალი მომხმარებელი სიაში პირველი შესვლის შემდეგ გამოჩნდება. შენ (ადმინი) ყოველთვის ხედავ ყველაფერს.</p></div>`}
-function open(c){cur=c?structuredClone(c):{name:'',floor:'',apt:'',phone:'',email:'',sqm:'',ppsqm:'',cur:'USD',down:'',term:24,start:new Date().toISOString().slice(0,7),day:5,sched:[]};cur.sched=cur.sched||[];detail()}
+ $('#users').innerHTML=`<div class="bar"><button class="g" id="ub">← სიაში</button></div><div class="card wrap"><h3>მომხმარებლები და უფლებები</h3><table><thead><tr><th>ელფოსტა</th>${PERM.map(p=>`<th>${p[1]}</th>`).join('')}</tr></thead><tbody><tr><td>${me} <span class="tg r">ადმინი</span></td>${PERM.map(()=>'<td>✓</td>').join('')}</tr>${L.map(u=>`<tr><td>${u.id}</td>${PERM.map(p=>`<td><input type="checkbox" data-u="${u.id}" data-p="${p[0]}" ${u[p[0]]?'checked':''} style="width:auto"></td>`).join('')}</tr>`).join('')}</tbody></table>
+<div class="bar" style="margin-top:12px"><input id="ue" type="email" placeholder="მენეჯერის ელფოსტა"><button id="ua">დამატება</button></div><p class="mu">მენეჯერი სიაში თვითონაც გამოჩნდება პირველი შესვლისას. თუ ვინმე ჯერ არ შესულა, დაამატე ელფოსტით და უფლებებს წინასწარ მიანიჭებ. ცარიელი უჯრა ნიშნავს, რომ უფლება არ აქვს.</p></div>`}
+function open(c){cur=c?structuredClone(c):{status:'sold',name:'',floor:'',apt:'',phone:'',email:'',sqm:'',ppsqm:'',cur:'USD',down:'',term:24,start:new Date().toISOString().slice(0,7),day:5,sched:[]};cur.sched=cur.sched||[];detail()}
 const rowsHtml=()=>cur.sched.map((x,i)=>`<tr data-i="${i}"><td>${i+1}</td><td class="dt"></td><td><input type="number" step="any" data-s="plan" value="${x.plan}" ${i==cur.sched.length-1&&i>0?'disabled':''}></td><td><input type="number" step="any" data-s="paid" value="${x.paid}"></td><td><input type="date" data-s="pdate" value="${x.pdate||''}"></td><td><select data-s="pc">${CUR.map(c=>`<option ${c==x.pc?'selected':''}>${c}</option>`).join('')}</select></td><td><input type="number" step="any" data-s="rate" value="${x.rate}" class="rt"></td><td class="cv"></td><td class="sx"></td></tr>`).join('');
-function detail(){go('detail');
+function detail(){go('detail');const S1=(cur.status||'sold')=='sold';
  const f=(k,l,t='text')=>`<div><label>${l}</label><input data-k="${k}" type="${t}" ${t=='number'?'step="any"':''} value="${cur[k]??''}"></div>`;
- $('#detail').innerHTML=`<div class="bar"><button class="g" id="back">← სიაში</button><button id="save">შენახვა</button>${cur.id?'<button class="d" id="del">წაშლა</button>':''}</div>
-<div class="card"><div class="grid">${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${f('down','პირველადი შენატანი (თანხა)','number')}${f('dpct','ან პირველადი შენატანი (%)','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}${f('note','შენიშვნა')}</div>
-<p><button class="g" id="gen">გრაფიკის გენერირება</button> <span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
-<div class="card" id="sum"></div>
+ $('#detail').innerHTML=`<div class="bar"><button class="g" id="back">← სიაში</button><button id="save">შენახვა</button>${cur.id&&can('del')?'<button class="d" id="del">წაშლა</button>':''}</div>
+<div class="card"><div class="grid"><div><label>სტატუსი</label><select data-k="status">${[['sold','გაყიდული'],['free','გასაყიდი'],['res','დაჯავშნილი'],['barter','ბარტერი']].map(([v,l])=>`<option value="${v}" ${(cur.status||'sold')==v?'selected':''}>${l}</option>`).join('')}</select></div>${f('name','სახელი გვარი')}${f('floor','სართული')}${f('apt','ბინის ნომერი')}${f('phone','ტელეფონი','tel')}${f('email','ელფოსტა','email')}${f('sqm','კვმ','number')}${cur.status=='barter'?f('ppsqm','ფასი 1 კვმ-ზე (ბარტერი: 0)','number').replace('<input','<input disabled'):f('ppsqm','ფასი 1 კვმ-ზე','number')}<div><label>ხელშეკრულების ვალუტა</label><select data-k="cur">${CUR.map(c=>`<option ${c==cur.cur?'selected':''}>${c}</option>`).join('')}</select></div>${S1?`${f('down','პირველადი შენატანი (თანხა)','number')}${f('dpct','ან პირველადი შენატანი (%)','number')}${f('term','ვადა (თვე)','number')}${f('start','პირველი გადახდის თვე','month')}${f('day','გადახდის დღე (1-31)','number')}`:''}${f('note','შენიშვნა')}</div>
+<p>${S1?'<button class="g" id="gen">გრაფიკის გენერირება</button> ':''}<span class="mu">ჯამური ღირებულება: <b id="tot"></b></span></p></div>
+${S1?`<div class="card" id="sum"></div>
 <div class="card wrap"><table><thead><tr><th>#</th><th>თარიღი</th><th>გეგმა</th><th>გადახდილი</th><th>გადახდის თარიღი</th><th>ვალუტა</th><th>კურსი (ეროვნული ბანკი)</th><th>ხელშ. ვალუტაში</th><th>სტატუსი</th></tr></thead><tbody id="rows">${rowsHtml()}</tbody></table></div>
-<p class="red" id="rmsg"></p><p class="mu">პირველი თვის გეგმაში თანხის ჩაწერისას ყველა შუა თვე იგივე თანხით შეივსება, ბოლო თვე კი დანაკლისს ავტომატურად გადაითვლის.</p><p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p><p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
-function upd(){const k=calc(cur),c=cur.cur;$('#tot').textContent=fm(k.total,c);
+<p class="red" id="rmsg"></p><p class="mu">პირველი თვის გეგმაში თანხის ჩაწერისას ყველა შუა თვე იგივე თანხით შეივსება, ბოლო თვე კი დანაკლისს ავტომატურად გადაითვლის.</p><p class="mu">მწვანე: დროულად გადახდილი · ნარინჯისფერი: გვიან გადაიხადა · ყვითელი: თანხა დააკლო · წითელი: ვადაგადაცილებული · ნაცრისფერი: ჯერ არ დამდგარა</p>`:''}<p class="mu">${cur.updatedBy?`ბოლოს შეცვალა: ${cur.updatedBy}, ${dd(new Date(cur.updatedAt))} ${p2(new Date(cur.updatedAt).getHours())}:${p2(new Date(cur.updatedAt).getMinutes())}`:''}</p>`;upd()}
+function upd(){const k=calc(cur),c=cur.cur;$('#tot').textContent=fm(k.total,c);if(!$('#sum'))return;
  $('#sum').innerHTML=`<div class="grid"><div><label>პირველადი შენატანი</label>${fm(k.down,c)}</div><div><label>სულ მიღებული</label><b class="grn">${fm(k.rec,c)}</b></div><div><label>დარჩენილი გადასახდელი</label><b>${fm(k.rem,c)}</b></div><div><label>ვადაგადაცილებული</label><b class="${k.ov>0?'red':''}">${fm(k.ov,c)}${k.days?` (${k.days} დღე)`:''}</b></div></div>${cur.sched.length&&Math.abs(k.sum-(k.total-k.down))>.01?`<p class="red">გრაფიკის ჯამი (${fm(k.sum,c)}) არ ემთხვევა ნაშთს (${fm(k.total-k.down,c)}). დააჭირე „გრაფიკის გენერირებას“.</p>`:''}${cur.sched.length>1&&cur.sched[cur.sched.length-1].plan<-.005?'<p class="red">ბოლო თვის გადახდა უარყოფითია: თვიური თანხა ზედმეტად დიდია.</p>':''}`;
  document.querySelectorAll('#rows tr').forEach((tr,i)=>{const x=cur.sched[i],r=k.rows[i],rt=tr.querySelector('.rt');tr.className=r.st;tr.querySelector('.sx').textContent=r.tx;tr.querySelector('.dt').textContent=r.d?dd(r.d):'—';
   const pi=tr.querySelector('[data-s=plan]');if(document.activeElement!==pi)pi.value=x.plan;
@@ -152,7 +168,7 @@ function gen(){const n=Math.max(1,Math.round(+cur.term)||0),t=r2(tot(cur)-(+cur.
  cur.sched=Array.from({length:n},(_,i)=>({plan:i<n-1?b:r2(t-b*(n-1)),paid:o[i]?.paid??'',pc:o[i]?.pc||cur.cur,rate:o[i]?.rate??'',pdate:o[i]?.pdate??''}));$('#rows').innerHTML=rowsHtml();upd()}
 function fixLast(){const s=cur.sched,n=s.length;if(n>1)s[n-1].plan=r2(tot(cur)-(+cur.down||0)-s.slice(0,n-1).reduce((a,x)=>a+(+x.plan||0),0))}
 document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset.s;if(!cur||$('#detail').classList.contains('hidden'))return;
- if(k){cur[k]=t.type=='number'?(t.value===''?'':+t.value):t.value;const dn=()=>document.querySelector('[data-k=down]'),dp=()=>document.querySelector('[data-k=dpct]');
+ if(k){cur[k]=t.type=='number'?(t.value===''?'':+t.value):t.value;if(k=='status'){if(cur.status=='barter'){cur.ppsqm=0;cur.total=0}detail();return}const dn=()=>document.querySelector('[data-k=down]'),dp=()=>document.querySelector('[data-k=dpct]');
   if(k=='dpct'){cur.down=cur.dpct===''?'':r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
   else if(k=='down'){cur.dpct='';dp().value=''}
   else if(['sqm','ppsqm'].includes(k)&&cur.dpct!==''&&cur.dpct!=null){cur.down=r2(tot(cur)*cur.dpct/100);dn().value=cur.down}
@@ -161,22 +177,27 @@ document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
  if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
  if(id=='imp'&&admin)$('#fi').click();
- else if(id=='usr'&&admin)usersView();else if(id=='ub')go('list');
+ else if(id=='usr'&&admin)usersView();
+ else if(id=='ua'&&admin){const em=$('#ue').value.trim().toLowerCase();if(!em.includes('@'))return;setDoc(doc(db,'users',em),{email:em},{merge:true}).catch(x=>alert('შეცდომა: '+x.message))}
+ else if(id=='flr'&&admin){const L=clients.filter(c=>(c.floor===''||c.floor==null)&&/^\d{3,4}$/.test(String(c.apt||'').trim()));
+  if(!L.length){alert('ბინის ნომრით შესავსები სართული არ მოიძებნა');return}
+  if(!confirm(`${L.length} ბინას სართული არ აქვს. ავიღო სართული ბინის ნომრიდან (ბოლო 2 ციფრი ბინის ნომერია)? მაგალითად: `+L.slice(0,5).map(c=>`${c.apt} → ${String(c.apt).trim().slice(0,-2)}`).join(', ')))return;
+  try{for(let i=0;i<L.length;i+=400){const b=writeBatch(db);L.slice(i,i+400).forEach(c=>b.update(doc(db,'clients',c.id),{floor:String(c.apt).trim().slice(0,-2)}));await b.commit()}alert('მზადაა')}catch(x){alert('შეცდომა: '+x.message)}}else if(id=='ub')go('list');
  else if(id=='clr'&&admin){if(!clients.length){alert('ბაზა უკვე ცარიელია');return}
   if(!confirm(`ყველა ${clients.length} კლიენტი სამუდამოდ წაიშლება. გავაგრძელო?`))return;
   if(prompt('დასადასტურებლად ჩაწერე სიტყვა: წაშლა')!=='წაშლა'){alert('გაუქმდა, არაფერი წაშლილა');return}
   try{const L=[...clients];for(let i=0;i<L.length;i+=400){const b=writeBatch(db);L.slice(i,i+400).forEach(c=>b.delete(doc(db,'clients',c.id)));await b.commit()}alert('ბაზა გასუფთავდა')}catch(x){alert('შეცდომა: '+x.message)}}
  else if(tr){open(clients.find(c=>c.id==tr.dataset.id))}
  else if(id=='new')open();else if(id=='back'){cur=null;go('list')}else if(id=='gen')gen();else if(id=='out')signOut(auth);
- else if(id=='save'){if(!(cur.name||'').trim()){alert('ჩაწერე სახელი გვარი');return}
+ else if(id=='save'){const stt=cur.status||'sold';if(stt=='free'?!String(cur.apt||'').trim():!(cur.name||'').trim()){alert(stt=='free'?'ჩაწერე ბინის ნომერი':'ჩაწერე სახელი გვარი');return}
   const cid=cur.id||doc(collection(db,'clients')).id,{id:_,...d}=cur;
   try{await setDoc(doc(db,'clients',cid),{...d,total:tot(cur),updatedBy:auth.currentUser.email,updatedAt:Date.now()});cur=null;go('list')}catch(x){alert('ვერ შეინახა: '+x.message)}}
- else if(id=='del'&&confirm('ნამდვილად წავშალო ეს კლიენტი?')){try{await deleteDoc(doc(db,'clients',cur.id));cur=null;go('list')}catch(x){alert('ვერ წაიშალა: '+x.message)}}
- else if(id=='exp'){const A=[],B=[];clients.forEach(c=>{const k=calc(c);A.push({'სახელი გვარი':c.name,'სართული':c.floor,'ბინა':c.apt,'ტელეფონი':c.phone,'ელფოსტა':c.email,'კვმ':c.sqm,'ფასი კვმ':c.ppsqm,'ვალუტა':c.cur,'ჯამი':k.total,'პირველადი შენატანი':k.down,'სულ მიღებული':k.rec,'დარჩენილი':k.rem,'ვადაგადაცილებული':k.ov,'გადახდის დღე':c.day});
+ else if(id=='del'&&can('del')&&confirm('ნამდვილად წავშალო ეს კლიენტი?')){try{await deleteDoc(doc(db,'clients',cur.id));cur=null;go('list')}catch(x){alert('ვერ წაიშალა: '+x.message)}}
+ else if(id=='exp'&&can('exp')){const A=[],B=[];clients.forEach(c=>{const k=calc(c);A.push({'სტატუსი':ST[c.status||'sold'],'სახელი გვარი':c.name,'სართული':c.floor,'ბინა':c.apt,'ტელეფონი':c.phone,'ელფოსტა':c.email,'კვმ':c.sqm,'ფასი კვმ':c.ppsqm,'ვალუტა':c.cur,'ჯამი':k.total,'პირველადი შენატანი':k.down,'სულ მიღებული':k.rec,'დარჩენილი':k.rem,'ვადაგადაცილებული':k.ov,'გადახდის დღე':c.day});
   (c.sched||[]).forEach((x,i)=>B.push({'სახელი გვარი':c.name,'ბინა':c.apt,'თარიღი':k.rows[i].d?dd(k.rows[i].d):'','გეგმა':x.plan,'გადახდილი':x.paid,'გადახდის თარიღი':x.pdate||'','სტატუსი':k.rows[i].tx,'გადახდის ვალუტა':x.pc,'კურსი':x.rate,'ხელშ. ვალუტაში':r2(k.rows[i].p)}))});
   const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(A),'კლიენტები');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(B),'გრაფიკები');XLSX.writeFile(wb,'debitorebi_'+new Date().toISOString().slice(0,10)+'.xlsx')}});
-document.addEventListener('change',e=>{const t=e.target;if(t.dataset.u)setDoc(doc(db,'users',t.dataset.u),{email:t.dataset.u,canSeeTotals:t.checked},{merge:true}).catch(x=>{alert('ვერ შეინახა: '+x.message);t.checked=!t.checked})});
-$('#q').oninput=renderList;
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.u)setDoc(doc(db,'users',t.dataset.u),{email:t.dataset.u,[t.dataset.p]:t.checked},{merge:true}).catch(x=>{alert('ვერ შეინახა: '+x.message);t.checked=!t.checked})});
+$('#q').oninput=renderList;$('#sf').onchange=renderList;
 $('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;
  try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array',cellDates:true}),arr=convertSheet(XLSX,wb.Sheets[wb.SheetNames[0]]);
   if(!arr.length){alert('ფაილში კლიენტები ვერ ვიპოვე');return}
@@ -184,10 +205,10 @@ $('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)re
   for(let i=0;i<arr.length;i+=400){const b=writeBatch(db);arr.slice(i,i+400).forEach(c=>{const {_flag,...d}=c;b.set(doc(collection(db,'clients')),{...d,updatedBy:auth.currentUser.email,updatedAt:Date.now()})});await b.commit()}
   alert('ჩაიტვირთა '+arr.length+' კლიენტი')}catch(x){alert('შეცდომა: '+x.message)}};
 $('#lf').onsubmit=async e=>{e.preventDefault();$('#err').textContent='';try{await signInWithEmailAndPassword(auth,$('#em').value.trim(),$('#pw').value)}catch(x){$('#err').textContent='არასწორი ელფოსტა ან პაროლი'}};
-onAuthStateChanged(auth,u=>{unsub&&unsub();unsub=null;uunsub&&uunsub();uunsub=null;admin=false;seeTot=false;UL=[];if(!u){$('#me').textContent='';cur=null;applyRole();return go('login')}
+onAuthStateChanged(auth,u=>{unsub&&unsub();unsub=null;uunsub&&uunsub();uunsub=null;admin=false;P={};UL=[];if(!u){$('#me').textContent='';cur=null;applyRole();return go('login')}
  $('#me').textContent=u.email;go('list');applyRole();
  const em=u.email.toLowerCase();
  getDocs(collection(db,'users')).then(()=>{admin=true;applyRole();uunsub=onSnapshot(collection(db,'users'),s=>{UL=s.docs.map(d=>({...d.data(),id:d.id}));if(!$('#users').classList.contains('hidden'))usersView()})})
-  .catch(()=>{uunsub=onSnapshot(doc(db,'users',em),s=>{if(!s.exists()){setDoc(doc(db,'users',em),{email:em,canSeeTotals:false}).catch(()=>{});return}seeTot=s.data().canSeeTotals===true;applyRole()},()=>{})});
+  .catch(()=>{uunsub=onSnapshot(doc(db,'users',em),s=>{if(!s.exists()){setDoc(doc(db,'users',em),{email:em,canSeeTotals:false}).catch(()=>{});return}const d=s.data();P={tot:d.canSeeTotals===true,fc:d.canSeeForecast===true,exp:d.canExport===true,del:d.canDelete===true};applyRole()},()=>{})});
  unsub=onSnapshot(collection(db,'clients'),s=>{clients=s.docs.map(d=>({...d.data(),id:d.id}));renderList()},x=>alert('ბაზასთან წვდომის შეცდომა: '+x.message))});
 </script></body></html>
