@@ -30,10 +30,11 @@ td input,td select{min-width:85px;padding:5px}
 <button style="width:100%;margin-top:6px">შესვლა</button><p id="err" class="red"></p></form></div>
 <div id="list" class="hidden">
 <div class="cards" id="sums"></div>
-<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, ტელეფონი"><button id="new">+ ახალი კლიენტი</button><div style="position:relative"><button class="g" id="mn">მენიუ ▾</button><div id="mm" class="card hidden" style="position:absolute;right:0;top:42px;z-index:5;width:250px;padding:6px"><button class="g" id="exp" style="width:100%;margin:3px 0">Excel-ში გადმოწერა</button><button class="g" id="imp" style="width:100%;margin:3px 0">იმპორტი ექსელიდან</button><button class="d" id="clr" style="width:100%;margin:3px 0">ბაზის სრული გასუფთავება</button><button class="g" id="out" style="width:100%;margin:3px 0">გასვლა</button></div></div><input type="file" id="fi" accept=".xlsx,.xls" class="hidden"></div>
+<div class="bar"><input id="q" placeholder="ძებნა: სახელი, ბინა, ტელეფონი"><button id="new">+ ახალი კლიენტი</button><div style="position:relative"><button class="g" id="mn">მენიუ ▾</button><div id="mm" class="card hidden" style="position:absolute;right:0;top:42px;z-index:5;width:250px;padding:6px"><button class="g adm hidden" id="usr" style="width:100%;margin:3px 0">მომხმარებლები</button><button class="g" id="exp" style="width:100%;margin:3px 0">Excel-ში გადმოწერა</button><button class="g adm hidden" id="imp" style="width:100%;margin:3px 0">იმპორტი ექსელიდან</button><button class="d adm hidden" id="clr" style="width:100%;margin:3px 0">ბაზის სრული გასუფთავება</button><button class="g" id="out" style="width:100%;margin:3px 0">გასვლა</button></div></div><input type="file" id="fi" accept=".xlsx,.xls" class="hidden"></div>
 <div class="card wrap"><table><thead><tr><th>სახელი გვარი</th><th>სართული</th><th>ბინა</th><th>სტატუსი</th><th>დარჩენილი</th></tr></thead><tbody id="tb"></tbody></table></div>
 </div>
 <div id="detail" class="hidden"></div>
+<div id="users" class="hidden"></div>
 </main>
 <script>
 function convertSheet(XLSX, ws){
@@ -86,7 +87,7 @@ function convertSheet(XLSX, ws){
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import {getFirestore,collection,onSnapshot,doc,setDoc,deleteDoc,writeBatch} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {getFirestore,collection,onSnapshot,doc,setDoc,deleteDoc,writeBatch,getDocs} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 const app=initializeApp({apiKey:"AIzaSyBNa4B-0hf_a13g3wW2ohK2xGKnOPqLbrY",authDomain:"debitorebi-baza.firebaseapp.com",projectId:"debitorebi-baza",storageBucket:"debitorebi-baza.firebasestorage.app",messagingSenderId:"269292067281",appId:"1:269292067281:web:d2330c15d3328af967a8f0"});
 const auth=getAuth(app),db=getFirestore(app);
 const CUR=['USD','EUR','GEL'],SY={USD:'$',EUR:'€',GEL:'₾'};
@@ -111,15 +112,18 @@ function calc(c){const s=c.sched||[],T=today(),total=tot(c),down=+c.down||0;let 
  const rec=down+paid,ov=Math.max(0,r2(req-rec));let days=0;
  if(ov>0){const k=cp.findIndex((v,i)=>v>rec+.005&&rows[i].d&&rows[i].d<=T);if(k>=0)days=Math.round((T-rows[k].d)/864e5)}
  return{total,down,rec,rem:r2(total-rec),ov,days,rows,sum:r2(s.reduce((a,y)=>a+(+y.plan||0),0))}}
-let cur=null,clients=[],unsub=null;
-const go=v=>{['login','list','detail'].forEach(x=>$('#'+x).classList.toggle('hidden',x!=v))};
+let cur=null,clients=[],unsub=null,admin=false,seeTot=false,uunsub=null,UL=[];
+const go=v=>{['login','list','detail','users'].forEach(x=>$('#'+x).classList.toggle('hidden',x!=v))};
 function renderList(){
  const S={};clients.forEach(c=>{const k=calc(c),s=S[c.cur]??={rec:0,rem:0,ov:0,n:0,late:0};s.rec+=k.rec;s.rem+=k.rem;s.ov+=k.ov;s.n++;if(k.ov>0)s.late++});
- $('#sums').innerHTML=(clients.length?`<div class="card"><h3>სულ</h3><div class="k"><span>კლიენტების რაოდენობა</span><b>${clients.length}</b></div><div class="k"><span>მოვალე კლიენტი (ვადაგადაცილებული)</span><b class="red">${Object.values(S).reduce((a,x)=>a+x.late,0)}</b></div></div>`:'')+CUR.filter(c=>S[c]).map(c=>`<div class="card"><h3>${c} · ${S[c].n} კლიენტი</h3><div class="k"><span>სულ მიღებული</span><b class="grn">${fm(S[c].rec,c)}</b></div><div class="k"><span>სულ მისაღები (დარჩენილი)</span><b>${fm(S[c].rem,c)}</b></div><div class="k"><span>ვადაგადაცილებული</span><b class="red">${fm(S[c].ov,c)}</b></div><div class="k"><span>მოვალე კლიენტი</span><b>${S[c].late}</b></div></div>`).join('')||'<p class="mu">ჯერ კლიენტი არ არის</p>';
+ const FULL=admin||seeTot;$('#sums').innerHTML=(clients.length?`<div class="card"><h3>სულ</h3><div class="k"><span>კლიენტების რაოდენობა</span><b>${clients.length}</b></div><div class="k"><span>მოვალე კლიენტი (ვადაგადაცილებული)</span><b class="red">${Object.values(S).reduce((a,x)=>a+x.late,0)}</b></div></div>`:'')+(FULL?CUR.filter(c=>S[c]).map(c=>`<div class="card"><h3>${c} · ${S[c].n} კლიენტი</h3><div class="k"><span>სულ მიღებული</span><b class="grn">${fm(S[c].rec,c)}</b></div><div class="k"><span>სულ მისაღები (დარჩენილი)</span><b>${fm(S[c].rem,c)}</b></div><div class="k"><span>ვადაგადაცილებული</span><b class="red">${fm(S[c].ov,c)}</b></div><div class="k"><span>მოვალე კლიენტი</span><b>${S[c].late}</b></div></div>`).join(''):'')||'<p class="mu">ჯერ კლიენტი არ არის</p>';
  const q=$('#q').value.toLowerCase();
  $('#tb').innerHTML=clients.filter(c=>[c.name,c.apt,c.phone].join(' ').toLowerCase().includes(q)).sort((a,b)=>(a.name||'').localeCompare(b.name||'','ka')).map(c=>{const k=calc(c);
   const st=k.ov>0?`<span class="red">● დაგვიანება${k.days?' '+k.days+' დღე':''} · ${fm(k.ov,c.cur)}</span>`:(k.total>0&&k.rem<=.005?'<span class="grn">გადახდილია</span>':'<span class="grn">რიგზეა</span>');
   return`<tr class="c" data-id="${c.id}"><td>${c.name||''}</td><td>${c.floor||''}</td><td>${c.apt||''}</td><td>${st}</td><td>${fm(k.rem,c.cur)}</td></tr>`}).join('')}
+function applyRole(){document.querySelectorAll('.adm').forEach(e=>e.classList.toggle('hidden',!admin));renderList()}
+function usersView(){go('users');const me=(auth.currentUser?.email||'').toLowerCase(),L=UL.filter(u=>u.id!=me);
+ $('#users').innerHTML=`<div class="bar"><button class="g" id="ub">← სიაში</button></div><div class="card wrap"><h3>მომხმარებლები</h3><table><thead><tr><th>ელფოსტა</th><th>ჯამური თანხების ხილვა</th></tr></thead><tbody>${L.map(u=>`<tr><td>${u.id}</td><td><input type="checkbox" data-u="${u.id}" ${u.canSeeTotals?'checked':''} style="width:auto"></td></tr>`).join('')||'<tr><td colspan="2" class="mu">ჯერ არავის უშესია</td></tr>'}</tbody></table><p class="mu">ახალი მომხმარებელი სიაში პირველი შესვლის შემდეგ გამოჩნდება. შენ (ადმინი) ყოველთვის ხედავ ყველაფერს.</p></div>`}
 function open(c){cur=c?structuredClone(c):{name:'',floor:'',apt:'',phone:'',email:'',sqm:'',ppsqm:'',cur:'USD',down:'',term:24,start:new Date().toISOString().slice(0,7),day:5,sched:[]};cur.sched=cur.sched||[];detail()}
 const rowsHtml=()=>cur.sched.map((x,i)=>`<tr data-i="${i}"><td>${i+1}</td><td class="dt"></td><td><input type="number" step="any" data-s="plan" value="${x.plan}" ${i==cur.sched.length-1&&i>0?'disabled':''}></td><td><input type="number" step="any" data-s="paid" value="${x.paid}"></td><td><input type="date" data-s="pdate" value="${x.pdate||''}"></td><td><select data-s="pc">${CUR.map(c=>`<option ${c==x.pc?'selected':''}>${c}</option>`).join('')}</select></td><td><input type="number" step="any" data-s="rate" value="${x.rate}" class="rt"></td><td class="cv"></td><td class="sx"></td></tr>`).join('');
 function detail(){go('detail');
@@ -156,8 +160,9 @@ document.addEventListener('input',e=>{const t=e.target,k=t.dataset.k,s=t.dataset
  else if(s){const i=+t.closest('tr').dataset.i;cur.sched[i][s]=(s=='pc'||s=='pdate')?t.value:(t.value===''?'':+t.value);if(s=='plan'){if(i==0&&cur.sched.length>2){const v=+cur.sched[0].plan||0;for(let j=1;j<cur.sched.length-1;j++)cur.sched[j].plan=v}fixLast()}upd();if(s=='pdate'||s=='pc'||(s=='paid'&&cur.sched[i].rate===''))autoRate(i)}});
 document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closest('tr.c');
  if(id=='mn')$('#mm').classList.toggle('hidden');else $('#mm').classList.add('hidden');
- if(id=='imp')$('#fi').click();
- else if(id=='clr'){if(!clients.length){alert('ბაზა უკვე ცარიელია');return}
+ if(id=='imp'&&admin)$('#fi').click();
+ else if(id=='usr'&&admin)usersView();else if(id=='ub')go('list');
+ else if(id=='clr'&&admin){if(!clients.length){alert('ბაზა უკვე ცარიელია');return}
   if(!confirm(`ყველა ${clients.length} კლიენტი სამუდამოდ წაიშლება. გავაგრძელო?`))return;
   if(prompt('დასადასტურებლად ჩაწერე სიტყვა: წაშლა')!=='წაშლა'){alert('გაუქმდა, არაფერი წაშლილა');return}
   try{const L=[...clients];for(let i=0;i<L.length;i+=400){const b=writeBatch(db);L.slice(i,i+400).forEach(c=>b.delete(doc(db,'clients',c.id)));await b.commit()}alert('ბაზა გასუფთავდა')}catch(x){alert('შეცდომა: '+x.message)}}
@@ -170,6 +175,7 @@ document.addEventListener('click',async e=>{const t=e.target,id=t.id,tr=t.closes
  else if(id=='exp'){const A=[],B=[];clients.forEach(c=>{const k=calc(c);A.push({'სახელი გვარი':c.name,'სართული':c.floor,'ბინა':c.apt,'ტელეფონი':c.phone,'ელფოსტა':c.email,'კვმ':c.sqm,'ფასი კვმ':c.ppsqm,'ვალუტა':c.cur,'ჯამი':k.total,'პირველადი შენატანი':k.down,'სულ მიღებული':k.rec,'დარჩენილი':k.rem,'ვადაგადაცილებული':k.ov,'გადახდის დღე':c.day});
   (c.sched||[]).forEach((x,i)=>B.push({'სახელი გვარი':c.name,'ბინა':c.apt,'თარიღი':k.rows[i].d?dd(k.rows[i].d):'','გეგმა':x.plan,'გადახდილი':x.paid,'გადახდის თარიღი':x.pdate||'','სტატუსი':k.rows[i].tx,'გადახდის ვალუტა':x.pc,'კურსი':x.rate,'ხელშ. ვალუტაში':r2(k.rows[i].p)}))});
   const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(A),'კლიენტები');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(B),'გრაფიკები');XLSX.writeFile(wb,'debitorebi_'+new Date().toISOString().slice(0,10)+'.xlsx')}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.u)setDoc(doc(db,'users',t.dataset.u),{email:t.dataset.u,canSeeTotals:t.checked},{merge:true}).catch(x=>{alert('ვერ შეინახა: '+x.message);t.checked=!t.checked})});
 $('#q').oninput=renderList;
 $('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;
  try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array',cellDates:true}),arr=convertSheet(XLSX,wb.Sheets[wb.SheetNames[0]]);
@@ -178,7 +184,10 @@ $('#fi').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)re
   for(let i=0;i<arr.length;i+=400){const b=writeBatch(db);arr.slice(i,i+400).forEach(c=>{const {_flag,...d}=c;b.set(doc(collection(db,'clients')),{...d,updatedBy:auth.currentUser.email,updatedAt:Date.now()})});await b.commit()}
   alert('ჩაიტვირთა '+arr.length+' კლიენტი')}catch(x){alert('შეცდომა: '+x.message)}};
 $('#lf').onsubmit=async e=>{e.preventDefault();$('#err').textContent='';try{await signInWithEmailAndPassword(auth,$('#em').value.trim(),$('#pw').value)}catch(x){$('#err').textContent='არასწორი ელფოსტა ან პაროლი'}};
-onAuthStateChanged(auth,u=>{unsub&&unsub();unsub=null;if(!u){$('#me').textContent='';cur=null;return go('login')}
- $('#me').textContent=u.email;go('list');
+onAuthStateChanged(auth,u=>{unsub&&unsub();unsub=null;uunsub&&uunsub();uunsub=null;admin=false;seeTot=false;UL=[];if(!u){$('#me').textContent='';cur=null;applyRole();return go('login')}
+ $('#me').textContent=u.email;go('list');applyRole();
+ const em=u.email.toLowerCase();
+ getDocs(collection(db,'users')).then(()=>{admin=true;applyRole();uunsub=onSnapshot(collection(db,'users'),s=>{UL=s.docs.map(d=>({...d.data(),id:d.id}));if(!$('#users').classList.contains('hidden'))usersView()})})
+  .catch(()=>{uunsub=onSnapshot(doc(db,'users',em),s=>{if(!s.exists()){setDoc(doc(db,'users',em),{email:em,canSeeTotals:false}).catch(()=>{});return}seeTot=s.data().canSeeTotals===true;applyRole()},()=>{})});
  unsub=onSnapshot(collection(db,'clients'),s=>{clients=s.docs.map(d=>({...d.data(),id:d.id}));renderList()},x=>alert('ბაზასთან წვდომის შეცდომა: '+x.message))});
 </script></body></html>
